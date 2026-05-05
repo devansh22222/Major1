@@ -1,0 +1,774 @@
+diseases,primary_therapeutic_class,alternative_therapeutic_class,medicine_1,medicine_2,medicine_3
+panic disorder,Antidepressants,Anxiolytics,Sertraline,Fluoxetine,Alprazolam
+vocal cord polyp,Corticosteroids,Surgical Intervention,Dexamethasone,,
+turner syndrome,Growth Hormones,Estrogen,Somatropin,Estradiol,
+cryptorchidism,Hormonal Therapy,Surgical Intervention,hCG (Human Chorionic Gonadotropin),,
+poisoning due to ethylene glycol,Antidotes (Fomepizole/Ethanol),,Fomepizole,Ethanol,
+atrophic vaginitis,Topical Estrogens,,Estradiol cream,Conjugated estrogens,
+fracture of the hand,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,
+cellulitis or abscess of mouth,Antibiotics,,Amoxicillin,Clindamycin,Cephalexin
+eye alignment disorder,Vision Therapy,Ophthalmic Surgery,Botulinum Toxin,,
+headache after lumbar puncture,Analgesics,Epidural Blood Patch,Acetaminophen,Ibuprofen,Caffeine
+pyloric stenosis,IV Fluids,Surgical Intervention,Normal Saline,,
+salivary gland disorder,Sialagogues,Antibiotics,Pilocarpine,Amoxicillin,
+osteochondrosis,Analgesics,Physical Therapy,Ibuprofen,Naproxen,
+injury to the knee,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,Naproxen
+metabolic disorder,Metabolic Agents,Dietary Management,Metformin,Levocarnitine,
+vaginitis,Antibiotics,Antifungals,Metronidazole,Fluconazole,Clindamycin
+sick sinus syndrome,Antiarrhythmics,Pacemaker,Atropine,,
+tinnitus of unknown cause,Vasodilators,Supportive Care,Betahistine,,
+glaucoma,Antiglaucoma Agents,,Latanoprost,Timolol,Brimonidine
+eating disorder,Antidepressants,Nutritional Support,Fluoxetine,Lisdexamfetamine,
+transient ischemic attack,Antiplatelets,Anticoagulants,Aspirin,Clopidogrel,Warfarin
+pyelonephritis,Antibiotics,,Ciprofloxacin,Ceftriaxone,Levofloxacin
+rotator cuff injury,NSAIDs,Corticosteroids,Ibuprofen,Naproxen,Cortisone injection
+chronic pain disorder,Analgesics,Antidepressants,Acetaminophen,Duloxetine,Gabapentin
+problem during pregnancy,Obstetric Care,,Prenatal Vitamins,Folic Acid,
+liver cancer,Antineoplastics,Targeted Therapy,Sorafenib,Lenvatinib,Atezolizumab
+atelectasis,Bronchodilators,Mucolytics,Albuterol,Acetylcysteine,
+injury to the hand,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,
+choledocholithiasis,Analgesics,Surgical Intervention,Acetaminophen,Ketorolac,
+injury to the hip,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,
+cirrhosis,Diuretics,Hepatoprotectants,Spironolactone,Furosemide,Lactulose
+thoracic aortic aneurysm,Antihypertensives,Surgical Intervention,Lisinopril,Amlodipine,Metoprolol
+subdural hemorrhage,Surgical Intervention,Anticonvulsants,Levetiracetam,Phenytoin,
+diabetic retinopathy,Anti-VEGF,Laser Therapy,Bevacizumab,Ranibizumab,Aflibercept
+fibromyalgia,Antidepressants,Anticonvulsants,Duloxetine,Milnacipran,Pregabalin
+ischemia of the bowel,Vasodilators,"Anticoagulants, Surgery",Papaverine,Heparin,Warfarin
+fetal alcohol syndrome,Supportive Care,Behavioral Therapy,Methylphenidate,Guanfacine,
+peritonitis,Antibiotics,Surgical Intervention,Ceftriaxone,Metronidazole,Piperacillin-Tazobactam
+injury to the abdomen,Analgesics,Surgical Intervention,Acetaminophen,Ibuprofen,
+acute pancreatitis,Analgesics,IV Fluids,Morphine,Lactated Ringers,
+thrombophlebitis,Anticoagulants,NSAIDs,Heparin,Rivaroxaban,Ibuprofen
+asthma,Bronchodilators,Inhaled Corticosteroids,Albuterol,Fluticasone,Budesonide
+foreign body in the vagina,Surgical or Manual Removal,,,,
+restless leg syndrome,Dopamine Agonists,Anticonvulsants,Pramipexole,Ropinirole,Gabapentin
+emphysema,Bronchodilators,Corticosteroids,Tiotropium,Albuterol,Prednisone
+cysticercosis,Anthelmintics,Corticosteroids,Albendazole,Praziquantel,Dexamethasone
+induced abortion,Abortifacients,,Mifepristone,Misoprostol,
+teething syndrome,Topical Analgesics,NSAIDs,Benzocaine,Ibuprofen,Acetaminophen
+infectious gastroenteritis,Oral Rehydration,Antimotility Agents,Oral Rehydration Salts,Loperamide,Bismuth Subsalicylate
+acute sinusitis,Decongestants,Antibiotics,Pseudoephedrine,Amoxicillin,Amoxicillin-Clavulanate
+substance-related mental disorder,Addiction Medicine,Antidotes,Buprenorphine,Methadone,Naltrexone
+postpartum depression,Antidepressants,,Sertraline,Fluoxetine,Brexanolone
+coronary atherosclerosis,Statins,Antiplatelets,Atorvastatin,Rosuvastatin,Aspirin
+spondylitis,NSAIDs,TNF Inhibitors,Naproxen,Indomethacin,Adalimumab
+pituitary adenoma,Dopamine Agonists,Somatostatin Analogs,Cabergoline,Bromocriptine,Octreotide
+uterine fibroids,GnRH Agonists,Progestins,Leuprolide,Medroxyprogesterone,Tranexamic Acid
+idiopathic nonmenstrual bleeding,Analgesics,Hormonal Therapy,Ibuprofen,Levonorgestrel,Ethinyl Estradiol
+chalazion,Corticosteroids,Warm Compresses,Triamcinolone injection,,
+ovarian torsion,Surgical Intervention,Analgesics,Acetaminophen,Ibuprofen,
+retinopathy due to high blood pressure,Antihypertensives,,Lisinopril,Amlodipine,Losartan
+vaginal yeast infection,Antifungals,,Fluconazole,Miconazole,Clotrimazole
+mastoiditis,Antibiotics,,Ceftriaxone,Clindamycin,Vancomycin
+lung contusion,Analgesics,Oxygen Therapy,Acetaminophen,Ibuprofen,Morphine
+hypertrophic obstructive cardiomyopathy (hocm),Beta-blockers,Calcium Channel Blockers,Metoprolol,Verapamil,Diltiazem
+ingrown toe nail,Antiseptics,Surgical Intervention,Chlorhexidine,Mupirocin,
+pulmonary eosinophilia,Corticosteroids,,Prednisone,Methylprednisolone,
+corneal disorder,Artificial Tears,Ophthalmic Corticosteroids,Polyethylene Glycol drops,Fluorometholone,Prednisolone drops
+foreign body in the gastrointestinal tract,Endoscopic Removal,,,,
+endophthalmitis,Intravitreal Antibiotics,Corticosteroids,Vancomycin,Ceftazidime,Dexamethasone
+intestinal malabsorption,Nutritional Supplements,,Vitamin B12,Iron,Calcium
+viral warts,Keratolytics,Cryotherapy,Salicylic Acid,Imiquimod,Podofilox
+hyperhidrosis,Antiperspirants,Anticholinergics,Aluminum Chloride,Glycopyrrolate,Oxybutynin
+stroke,Thrombolytics,Antiplatelets,Alteplase (tPA),Aspirin,Clopidogrel
+pilonidal cyst,Antibiotics,Surgical Intervention,Cephalexin,Metronidazole,
+crushing injury,Analgesics,"Antibiotics, Surgery",Morphine,Cefazolin,
+normal pressure hydrocephalus,Surgical Intervention (Shunt),,,,
+alopecia,Minoxidil,5-Alpha Reductase Inhibitors,Minoxidil,Finasteride,Dutasteride
+hashimoto thyroiditis,Thyroid Hormones,,Levothyroxine,,
+flat feet,Orthotics,Physical Therapy,Ibuprofen,,
+nonalcoholic liver disease (nash),Insulin Sensitizers,Lipid-lowering Agents,Pioglitazone,Vitamin E,Atorvastatin
+hemarthrosis,Coagulation Factors,Analgesics,Factor VIII,Factor IX,Acetaminophen
+pelvic organ prolapse,Pessaries,Surgical Intervention,Topical Estrogen,,
+fracture of the arm,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Morphine
+coagulation (bleeding) disorder,Hemostatics,Coagulation Factors,Desmopressin,Tranexamic Acid,Factor Concentrates
+intracranial hemorrhage,Antihypertensives,Osmotic Diuretics,Nicardipine,Labetalol,Mannitol
+hyperkalemia,Cation Exchange Resins,Diuretics,Sodium Zirconium Cyclosilicate,Patiromer,Furosemide
+cornea infection,Ophthalmic Antibiotics,Antivirals,Moxifloxacin drops,Acyclovir ointment,Ganciclovir gel
+abscess of the lung,Antibiotics,,Clindamycin,Amoxicillin-Clavulanate,Ampicillin-Sulbactam
+dengue fever,Antipyretics,IV Fluids,Acetaminophen,Normal Saline,
+chronic sinusitis,Nasal Corticosteroids,Antibiotics,Fluticasone nasal,Mometasone nasal,Amoxicillin-Clavulanate
+cholesteatoma,Surgical Intervention,Antibiotic Drops,Ciprofloxacin-Dexamethasone drops,,
+volvulus,Surgical Intervention,,,,
+injury to the finger,Analgesics,Orthopedic Intervention,Acetaminophen,Ibuprofen,
+poisoning due to analgesics,Antidotes,,Acetylcysteine (for Tylenol),Naloxone (for Opioids),
+atrial fibrillation,Antiarrhythmics,Anticoagulants,Amiodarone,Apixaban,Warfarin
+pinworm infection,Anthelmintics,,Mebendazole,Albendazole,Pyrantel Pamoate
+urethral valves,Surgical Intervention,,,,
+open wound of the neck,Antibiotics,Analgesics,Cephalexin,Acetaminophen,Ibuprofen
+achalasia,Calcium Channel Blockers,Nitrates,Nifedipine,Isosorbide Dinitrate,Botulinum Toxin
+conductive hearing loss,Surgical Intervention,Hearing Aids,,,
+abdominal hernia,Surgical Intervention,Analgesics,Acetaminophen,Ibuprofen,
+cerebral palsy,Muscle Relaxants,Anticonvulsants,Baclofen,Diazepam,Levetiracetam
+marijuana abuse,Behavioral Therapy,Supportive Care,,,
+cryptococcosis,Antifungals,,Amphotericin B,Flucytosine,Fluconazole
+obesity,Anti-obesity Agents,GLP-1 Agonists,Semaglutide,Liraglutide,Orlistat
+indigestion,Antacids,PPIs,Calcium Carbonate,Omeprazole,Famotidine
+bursitis,NSAIDs,Corticosteroids,Ibuprofen,Naproxen,Triamcinolone injection
+esophageal cancer,Antineoplastics,Surgical Intervention,Fluorouracil,Cisplatin,Paclitaxel
+pulmonary congestion,Diuretics,Vasodilators,Furosemide,Nitroglycerin,Enalapril
+juvenile rheumatoid arthritis,NSAIDs,DMARDs,Naproxen,Methotrexate,Etanercept
+actinic keratosis,Topical Antineoplastics,Cryotherapy,Fluorouracil cream,Imiquimod cream,Diclofenac gel
+acute otitis media,Antibiotics,Analgesics,Amoxicillin,Cefdinir,Acetaminophen
+astigmatism,Corrective Lenses,Refractive Surgery,,,
+tuberous sclerosis,mTOR Inhibitors,Anticonvulsants,Everolimus,Sirolimus,Vigabatrin
+empyema,Antibiotics,Surgical Drainage,Ceftriaxone,Metronidazole,Piperacillin-Tazobactam
+presbyacusis,Hearing Aids,,,,
+neonatal jaundice,Phototherapy,Exchange Transfusion,IVIG,,
+chronic obstructive pulmonary disease (copd),Bronchodilators,Corticosteroids,Tiotropium,Albuterol,Fluticasone
+dislocation of the elbow,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,
+spondylosis,NSAIDs,Muscle Relaxants,Naproxen,Diclofenac,Cyclobenzaprine
+herpangina,Analgesics,Antipyretics,Acetaminophen,Ibuprofen,Lidocaine viscous
+injury to the shoulder,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,Naproxen
+poisoning due to antidepressants,Antidotes,Supportive Care,Sodium Bicarbonate,Activated Charcoal,
+infection of open wound,Antibiotics,Wound Care,Cephalexin,Doxycycline,Clindamycin
+deep vein thrombosis (dvt),Anticoagulants,,Apixaban,Rivaroxaban,Heparin
+protein deficiency,Nutritional Supplements,,Protein powder,Amino acids,
+myoclonus,Anticonvulsants,Tranquilizers,Clonazepam,Valproic Acid,Levetiracetam
+bone spur of the calcaneous,NSAIDs,Corticosteroid Injections,Ibuprofen,Naproxen,Methylprednisolone injection
+von willebrand disease,Hemostatics (Desmopressin),Coagulation Factors,Desmopressin,Tranexamic Acid,von Willebrand Factor
+open wound of the back,Antibiotics,Wound Care,Cephalexin,Acetaminophen,Ibuprofen
+heart block,Pacemaker,Sympathomimetics,Atropine,Epinephrine,Isoproterenol
+colonic polyp,Surgical Removal (Polypectomy),,,,
+magnesium deficiency,Magnesium Supplements,,Magnesium Oxide,Magnesium Citrate,Magnesium Sulfate
+female infertility of unknown cause,Ovulation Stimulants,,Clomiphene,Letrozole,Gonadotropins
+pericarditis,NSAIDs,Colchicine,Ibuprofen,Indomethacin,Colchicine
+attention deficit hyperactivity disorder (adhd),CNS Stimulants,Non-stimulants,Methylphenidate,Amphetamine salts,Atomoxetine
+pulmonic valve disease,Surgical Intervention,Diuretics,Furosemide,,
+tietze syndrome,NSAIDs,Analgesics,Ibuprofen,Naproxen,Acetaminophen
+cranial nerve palsy,Corticosteroids,Supportive Care,Prednisone,Dexamethasone,
+injury to the arm,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,
+conversion disorder,Psychotherapy,Physical Therapy,Sertraline,Fluoxetine,
+complex regional pain syndrome,Analgesics,Anticonvulsants,Gabapentin,Pregabalin,Duloxetine
+otosclerosis,Surgical Intervention,Hearing Aids,Sodium Fluoride,,
+injury to the trunk,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,
+hypothyroidism,Thyroid Hormones (Levothyroxine),,Levothyroxine,Liothyronine,
+primary insomnia,Hypnotics,Sedatives,Zolpidem,Eszopiclone,Trazodone
+lice,Pediculicides,,Permethrin,Ivermectin,Malathion
+vitamin b12 deficiency,Vitamin B12 Supplements (Cyanocobalamin),,Cyanocobalamin,Hydroxocobalamin,
+diabetes,Insulins,Oral Hypoglycemics,Metformin,Insulin Glargine,Empagliflozin
+vulvodynia,Topical Anesthetics,Antidepressants,Lidocaine ointment,Amitriptyline,Gabapentin
+endometriosis,Hormonal Contraceptives,GnRH Agonists,Ethinyl Estradiol/Levonorgestrel,Leuprolide,Elagolix
+vasculitis,Corticosteroids,Immunosuppressants,Prednisone,Cyclophosphamide,Rituximab
+concussion,Analgesics,Physical Rest,Acetaminophen,,
+oral leukoplakia,Surgical Removal,Retinoids,Isotretinoin,,
+chronic kidney disease,Antihypertensives,Phosphate Binders,Lisinopril,Losartan,Sevelamer
+bladder disorder,Anticholinergics,Analgesics,Oxybutynin,Tolterodine,Phenazopyridine
+chorioretinitis,Corticosteroids,Antimicrobials,Prednisone,Pyrimethamine,Sulfadiazine
+priapism,Sympathomimetics,Surgical Intervention,Phenylephrine injection,Terbutaline,
+myositis,Corticosteroids,Immunosuppressants,Prednisone,Methotrexate,Azathioprine
+mononucleosis,Analgesics,Antipyretics,Acetaminophen,Ibuprofen,
+neuralgia,Anticonvulsants,Antidepressants,Gabapentin,Carbamazepine,Amitriptyline
+polycystic kidney disease,Antihypertensives,Vasopressin Receptor Antagonists,Lisinopril,Tolvaptan,
+bipolar disorder,Mood Stabilizers,Antipsychotics,Lithium,Valproic Acid,Quetiapine
+amyloidosis,Chemotherapy,Targeted Therapy,Bortezomib,Daratumumab,Melphalan
+chronic inflammatory demyelinating polyneuropathy (cidp),Corticosteroids,IVIG,Prednisone,Intravenous Immunoglobulin,Plasmapheresis
+gastroesophageal reflux disease (gerd),Proton Pump Inhibitors,H2 Blockers,Omeprazole,Pantoprazole,Famotidine
+vitreous hemorrhage,Surgical Intervention,Anti-VEGF,Bevacizumab,Ranibizumab,
+poisoning due to antimicrobial drugs,Supportive Care,Dialysis,Activated Charcoal,,
+open wound of the mouth,Antibiotics,Antiseptics,Amoxicillin,Chlorhexidine rinse,
+scleroderma,Immunosuppressants,Vasodilators,Mycophenolate,Methotrexate,Nifedipine
+myasthenia gravis,Acetylcholinesterase Inhibitors,Immunosuppressants,Pyridostigmine,Prednisone,Azathioprine
+hypoglycemia,Glucose Elevating Agents (Glucagon),,Glucagon,Dextrose,
+idiopathic absence of menstruation,Hormonal Therapy (Estrogen/Progesterone),,Ethinyl Estradiol,Medroxyprogesterone,
+dislocation of the ankle,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,
+carbon monoxide poisoning,Oxygen Therapy,,100% Oxygen,,
+panic attack,Anxiolytics (Benzodiazepines),,Alprazolam,Lorazepam,Clonazepam
+plantar fasciitis,NSAIDs,Corticosteroid Injections,Ibuprofen,Naproxen,Methylprednisolone injection
+hyperopia,Corrective Lenses,Refractive Surgery,,,
+poisoning due to sedatives,Antidotes (Flumazenil),Supportive Care,Flumazenil,,
+pemphigus,Corticosteroids,Immunosuppressants,Prednisone,Rituximab,Azathioprine
+peyronie disease,Collagenase,NSAIDs,Collagenase clostridium histolyticum,Ibuprofen,Vitamin E
+hiatal hernia,Proton Pump Inhibitors,Antacids,Omeprazole,Pantoprazole,Calcium Carbonate
+extrapyramidal effect of drugs,Anticholinergics,Dopamine Agonists,Benztropine,Diphenhydramine,Amantadine
+meniere disease,Antiemetics,"Diuretics, Antihistamines",Meclizine,Hydrochlorothiazide,Promethazine
+anal fissure,Topical Anesthetics,Vasodilators,Lidocaine ointment,Nitroglycerin ointment,Nifedipine ointment
+allergy,Antihistamines,Corticosteroids,Cetirizine,Loratadine,Fluticasone
+chronic otitis media,Antibiotics,Corticosteroids,Ciprofloxacin drops,Dexamethasone drops,Amoxicillin-Clavulanate
+fracture of the finger,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,
+hirschsprung disease,Surgical Intervention,,,,
+polymyalgia rheumatica,Corticosteroids,,Prednisone,Methylprednisolone,
+lymphedema,Compression Therapy,Diuretics,Furosemide,,
+bladder cancer,Antineoplastics,Intravesical Therapy,BCG vaccine,Mitomycin,Cisplatin
+acute bronchospasm,Short-acting Bronchodilators,,Albuterol,Levalbuterol,
+acute glaucoma,Antiglaucoma Agents,Osmotic Diuretics,Timolol,Acetazolamide,Mannitol
+open wound of the chest,Antibiotics,"Analgesics, Surgery",Cephalexin,Acetaminophen,Morphine
+dislocation of the patella,Orthopedic Intervention,NSAIDs,Ibuprofen,Naproxen,
+sciatica,NSAIDs,Muscle Relaxants,Ibuprofen,Cyclobenzaprine,Gabapentin
+hypercalcemia,Bisphosphonates,"Calcitonin, IV Fluids",Zoledronic Acid,Calcitonin,Normal Saline
+stress incontinence,Topical Estrogens,"SNRIs, Surgery",Estradiol cream,Duloxetine,
+varicose veins,Sclerotherapy,Surgical Intervention,Polidocanol,Sodium Tetradecyl Sulfate,
+benign kidney cyst,Analgesics,Surgical Intervention,Acetaminophen,Ibuprofen,
+hydrocele of the testicle,Surgical Intervention,,,,
+degenerative disc disease,NSAIDs,Physical Therapy,Ibuprofen,Naproxen,Meloxicam
+hirsutism,Antiandrogens,Oral Contraceptives,Spironolactone,Ethinyl Estradiol/Drospirenone,Finasteride
+dislocation of the foot,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Morphine
+hydronephrosis,Surgical Intervention,Antibiotics,Ciprofloxacin,Ceftriaxone,
+diverticulosis,High-Fiber Diet,Antispasmodics,Psyllium,Dicyclomine,
+pain after an operation,Analgesics (Opioids/NSAIDs),,Morphine,Oxycodone,Ketorolac
+huntington disease,Vesicular Monoamine Transporter 2 (VMAT2) Inhibitors,,Tetrabenazine,Deutetrabenazine,Haloperidol
+lymphoma,Antineoplastics,Radiation Therapy,Rituximab,Cyclophosphamide,Doxorubicin
+dermatitis due to sun exposure,Topical Corticosteroids,Emollients,Hydrocortisone cream,Aloe Vera,
+anemia due to chronic kidney disease,Erythropoiesis-Stimulating Agents,Iron Supplements,Epoetin alfa,Darbepoetin alfa,Ferrous Sulfate
+injury to internal organ,Surgical Intervention,Supportive Care,Morphine,Fentanyl,
+scleritis,NSAIDs,Systemic Corticosteroids,Indomethacin,Prednisone,Methotrexate
+pterygium,Artificial Tears,Surgical Intervention,Polyethylene Glycol drops,Fluorometholone drops,
+fungal infection of the skin,Topical Antifungals,,Clotrimazole,Terbinafine,Ketoconazole
+insulin overdose,Glucose Elevating Agents (Dextrose),,Dextrose 50%,Glucagon,
+syndrome of inappropriate secretion of adh (siadh),Vasopressin Receptor Antagonists,Fluid Restriction,Tolvaptan,Conivaptan,Urea
+foreign body in the ear,Manual Extraction,,,,
+premenstrual tension syndrome,NSAIDs,Hormonal Contraceptives,Ibuprofen,Naproxen,Ethinyl Estradiol/Drospirenone
+orbital cellulitis,IV Antibiotics,,Vancomycin,Ceftriaxone,Ampicillin-Sulbactam
+injury to the leg,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,
+hepatic encephalopathy,Laxatives (Lactulose),Antibiotics (Rifaximin),Lactulose,Rifaximin,Neomycin
+bone cancer,Antineoplastics,"Surgical Intervention, Radiation",Doxorubicin,Cisplatin,Methotrexate
+syringomyelia,Surgical Intervention,Analgesics,Gabapentin,Pregabalin,Ibuprofen
+pulmonary fibrosis,Antifibrotics,Oxygen Therapy,Pirfenidone,Nintedanib,
+mitral valve disease,Surgical Intervention,"Diuretics, Beta-blockers",Furosemide,Metoprolol,Warfarin
+parkinson disease,Dopamine Agonists,Levodopa,Carbidopa-Levodopa,Pramipexole,Ropinirole
+gout,Uricosurics,"Xanthine Oxidase Inhibitors, NSAIDs",Allopurinol,Colchicine,Indomethacin
+otitis media,Antibiotics,Analgesics,Amoxicillin,Cefdinir,Acetaminophen
+drug abuse (opioids),Opioid Antagonists (Naloxone),Agonists (Methadone),Naloxone,Buprenorphine,Methadone
+myelodysplastic syndrome,Antineoplastics,Blood Transfusions,Azacitidine,Decitabine,Lenalidomide
+fracture of the shoulder,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+acute kidney injury,IV Fluids,"Diuretics, Dialysis",Normal Saline,Furosemide,
+threatened pregnancy,Progestins,Bed Rest,Progesterone,Hydroxyprogesterone,
+intracranial abscess,IV Antibiotics,Surgical Drainage,Ceftriaxone,Metronidazole,Vancomycin
+gum disease,Antiseptics,Dental Intervention,Chlorhexidine mouthwash,Amoxicillin,
+open wound from surgical incision,Wound Care,Antibiotics,Cephalexin,Acetaminophen,Ibuprofen
+gastrointestinal hemorrhage,PPIs,Endoscopic Intervention,Pantoprazole,Omeprazole,Octreotide
+seborrheic dermatitis,Topical Antifungals,Corticosteroids,Ketoconazole shampoo,Hydrocortisone cream,Ciclopirox
+drug abuse (methamphetamine),Behavioral Therapy,Supportive Care,Diazepam,Haloperidol,
+torticollis,Muscle Relaxants,Botulinum Toxin,Cyclobenzaprine,Baclofen,Botulinum Toxin
+poisoning due to antihypertensives,Vasopressors,"Supportive Care, Antidotes",Norepinephrine,Glucagon,Calcium Gluconate
+tension headache,Analgesics,NSAIDs,Acetaminophen,Ibuprofen,Naproxen
+alcohol intoxication,Supportive Care,IV Fluids,Normal Saline,Thiamine,Folic Acid
+scurvy,Vitamin C Supplements (Ascorbic Acid),,Ascorbic Acid,,
+narcolepsy,CNS Stimulants,,Modafinil,Armodafinil,Methylphenidate
+food allergy,Antihistamines,Epinephrine,Epinephrine auto-injector,Diphenhydramine,Cetirizine
+labyrinthitis,Antiemetics,"Antihistamines, Corticosteroids",Meclizine,Promethazine,Prednisone
+anxiety,Anxiolytics,Antidepressants,Alprazolam,Sertraline,Buspirone
+impulse control disorder,Antidepressants,Mood Stabilizers,Fluoxetine,Lithium,Valproic Acid
+stenosis of the tear duct,Surgical Intervention,Antibiotic Drops,Erythromycin drops,Moxifloxacin drops,
+abscess of nose,Antibiotics,Surgical Drainage,Amoxicillin-Clavulanate,Clindamycin,
+omphalitis,Antibiotics,,Cefazolin,Clindamycin,Vancomycin
+leukemia,Antineoplastics,Targeted Therapy,Imatinib,Cytarabine,Daunorubicin
+bell palsy,Corticosteroids,Antivirals,Prednisone,Valacyclovir,Acyclovir
+conjunctivitis due to allergy,Ophthalmic Antihistamines,Mast Cell Stabilizers,Olopatadine drops,Ketotifen drops,Cromolyn drops
+drug reaction,Antihistamines,"Corticosteroids, Epinephrine",Diphenhydramine,Prednisone,Epinephrine
+adrenal cancer,Antineoplastics,Adrenolytic Agents (Mitotane),Mitotane,Etoposide,Doxorubicin
+myopia,Corrective Lenses,Refractive Surgery,Atropine drops (for progression),,
+osteoarthritis,NSAIDs,Intra-articular Corticosteroids,Ibuprofen,Meloxicam,Triamcinolone injection
+thyroid disease,Thyroid Hormones,Antithyroid Agents,Levothyroxine,Methimazole,Propylthiouracil
+pharyngitis,Analgesics,Antibiotics,Acetaminophen,Amoxicillin,Penicillin V
+chronic rheumatic fever,Antibiotics (Penicillin prophylaxis),NSAIDs,Penicillin G Benzathine,Aspirin,Naproxen
+hypocalcemia,Calcium Supplements,Vitamin D,Calcium Carbonate,Calcium Citrate,Calcitriol
+macular degeneration,Anti-VEGF Therapy,,Bevacizumab,Ranibizumab,Aflibercept
+pneumonia,Antibiotics,Antivirals,Azithromycin,Levofloxacin,Amoxicillin
+cold sore,Topical Antivirals,,Acyclovir ointment,Docosanol cream,Valacyclovir
+premature ventricular contractions (pvcs),Beta-blockers,Antiarrhythmics,Metoprolol,Atenolol,Amiodarone
+testicular cancer,Antineoplastics,Surgical Intervention,Cisplatin,Etoposide,Bleomycin
+hydrocephalus,Surgical Intervention (Shunt),,,,
+breast cancer,Antineoplastics,"Hormonal Therapy, Surgery",Tamoxifen,Anastrozole,Doxorubicin
+anemia due to malignancy,Erythropoiesis-Stimulating Agents,Transfusions,Epoetin alfa,Darbepoetin alfa,Iron
+esophageal varices,Beta-blockers,Endoscopic Ligation,Propranolol,Nadolol,Octreotide
+endometrial cancer,Surgical Intervention,"Antineoplastics, Hormonal Therapy",Medroxyprogesterone,Paclitaxel,Carboplatin
+cystic fibrosis,CFTR Modulators,"Mucolytics, Antibiotics",Ivacaftor,Dornase alfa,Tobramycin inhaled
+intertrigo (skin condition),Topical Antifungals,Corticosteroids,Nystatin powder,Clotrimazole cream,Hydrocortisone cream
+parathyroid adenoma,Surgical Intervention (Parathyroidectomy),,,,
+glucocorticoid deficiency,Corticosteroids (Hydrocortisone/Fludrocortisone),,Hydrocortisone,Fludrocortisone,Prednisone
+temporomandibular joint disorder,NSAIDs,Muscle Relaxants,Ibuprofen,Naproxen,Cyclobenzaprine
+wilson disease,Copper-Chelating Agents (Penicillamine),,Penicillamine,Trientine,Zinc Acetate
+vesicoureteral reflux,Antibiotics,Surgical Intervention,Trimethoprim-Sulfamethoxazole,Cephalexin,
+vitamin a deficiency,Vitamin A Supplements (Retinol),,Vitamin A (Retinol),,
+gonorrhea,Antibiotics (Ceftriaxone),,Ceftriaxone,Azithromycin,
+fracture of the rib,Analgesics,Nerve Blocks,Acetaminophen,Ibuprofen,Lidocaine
+ependymoma,Antineoplastics,"Radiation Therapy, Surgery",Cisplatin,Etoposide,
+hepatitis due to a toxin,Hepatoprotectants,"Supportive Care, Antidotes",Acetylcysteine (if Acetaminophen),Ursodeoxycholic Acid,
+vaginal cyst,Surgical Intervention,,,,
+open wound of the shoulder,Antibiotics,Wound Care,Cephalexin,Acetaminophen,Ibuprofen
+ectopic pregnancy,Abortifacients (Methotrexate),Surgical Intervention,Methotrexate,,
+chronic knee pain,NSAIDs,Physical Therapy,Ibuprofen,Meloxicam,Diclofenac
+pinguecula,Artificial Tears,Topical NSAIDs,Polyethylene Glycol drops,Ketorolac drops,Diclofenac drops
+hypergammaglobulinemia,Immunosuppressants,IVIG,Intravenous Immunoglobulin,Rituximab,Prednisone
+alcohol abuse,Alcohol Deterrents (Disulfiram),Naltrexone,Disulfiram,Naltrexone,Acamprosate
+carpal tunnel syndrome,NSAIDs,"Corticosteroid Injections, Splinting",Ibuprofen,Naproxen,Methylprednisolone injection
+pituitary disorder,Hormone Replacement Therapy,,Levothyroxine,Hydrocortisone,Testosterone
+kidney stone,Analgesics,"Alpha-blockers, Lithotripsy",Ketorolac,Tamsulosin,Ibuprofen
+autism,Behavioral Therapy,Antipsychotics (for irritability),Risperidone,Aripiprazole,Melatonin (for sleep)
+cat scratch disease,Antibiotics,,Azithromycin,Ciprofloxacin,Rifampin
+chronic glaucoma,Antiglaucoma Agents,,Latanoprost,Timolol,Dorzolamide
+retinal detachment,Ophthalmic Surgery,,,,
+aplastic anemia,Immunosuppressants,Bone Marrow Stimulants,Cyclosporine,Anti-thymocyte Globulin,Eltrombopag
+overflow incontinence,Alpha-blockers,"Cholinergics, Catheterization",Tamsulosin,Bethanechol,
+hemolytic anemia,Corticosteroids,Immunosuppressants,Prednisone,Rituximab,Cyclosporine
+lateral epicondylitis (tennis elbow),NSAIDs,Physical Therapy,Ibuprofen,Naproxen,Diclofenac gel
+open wound of the eye,Ophthalmic Antibiotics,Surgical Intervention,Moxifloxacin drops,Erythromycin ointment,
+syphilis,Antibiotics (Penicillin G),,Penicillin G Benzathine,Doxycycline,
+diabetic kidney disease,ACE Inhibitors,"ARBs, SGLT2 Inhibitors",Lisinopril,Losartan,Empagliflozin
+nose disorder,Decongestants,Nasal Corticosteroids,Pseudoephedrine,Fluticasone nasal,Oxymetazoline nasal
+drug withdrawal,Alpha-2 Agonists (Clonidine),Benzodiazepines,Clonidine,Diazepam,Buprenorphine
+dental caries,Dental Fillings,Fluoride Therapy,Sodium Fluoride,,
+hypercholesterolemia,Statins,"PCSK9 Inhibitors, Ezetimibe",Atorvastatin,Rosuvastatin,Ezetimibe
+fracture of the patella,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+kidney failure,Dialysis,Kidney Transplant,Sevelamer,Epoetin alfa,Calcitriol
+fracture of the neck,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Morphine
+muscle spasm,Muscle Relaxants,Analgesics,Cyclobenzaprine,Methocarbamol,Tizanidine
+hemophilia,Coagulation Factors (Factor VIII/IX),,Factor VIII,Factor IX,Desmopressin
+hyperosmotic hyperketotic state,IV Fluids,"Insulins, Electrolytes",Normal Saline,Regular Insulin,Potassium Chloride
+peritonsillar abscess,Antibiotics,Surgical Drainage,Clindamycin,Amoxicillin-Clavulanate,Penicillin V
+gastroparesis,Prokinetics (Metoclopramide),,Metoclopramide,Erythromycin,Domperidone
+itching of unknown cause,Antihistamines,Topical Corticosteroids,Cetirizine,Hydroxyzine,Hydrocortisone cream
+polycythemia vera,Phlebotomy,Cytoreductive Agents (Hydroxyurea),Hydroxyurea,Aspirin,Interferon alfa
+thrombocytopenia,Corticosteroids,Thrombopoietin Receptor Agonists,Prednisone,Eltrombopag,Romiplostim
+head and neck cancer,Antineoplastics,"Radiation Therapy, Surgery",Cisplatin,Cetuximab,Fluorouracil
+pseudohypoparathyroidism,Calcium Supplements,Active Vitamin D (Calcitriol),Calcitriol,Calcium Carbonate,
+goiter,Thyroid Hormones,"Iodine Supplements, Surgery",Levothyroxine,Potassium Iodide,
+urge incontinence,Anticholinergics,Beta-3 Agonists,Oxybutynin,Tolterodine,Mirabegron
+edward syndrome,Supportive Care,Palliative Care,Morphine,Lorazepam,
+open wound of the arm,Antibiotics,Wound Care,Cephalexin,Acetaminophen,Ibuprofen
+muscular dystrophy,Corticosteroids,Physical Therapy,Prednisone,Deflazacort,Eteplirsen
+mittelschmerz,NSAIDs,Analgesics,Ibuprofen,Naproxen,Acetaminophen
+corneal abrasion,Ophthalmic Antibiotics,Artificial Tears,Erythromycin ointment,Polyethylene Glycol drops,
+anemia of chronic disease,Erythropoiesis-Stimulating Agents,Iron,Epoetin alfa,Darbepoetin alfa,Ferrous Sulfate
+dysthymic disorder,Antidepressants,,Sertraline,Fluoxetine,Escitalopram
+scarlet fever,Antibiotics (Penicillin/Amoxicillin),,Amoxicillin,Penicillin V,Azithromycin
+hypertensive heart disease,Antihypertensives,Diuretics,Lisinopril,Amlodipine,Hydrochlorothiazide
+drug abuse (barbiturates),Supportive Care,Tapering,Phenobarbital (taper),,
+polycystic ovarian syndrome (pcos),Oral Contraceptives,Insulin Sensitizers (Metformin),Ethinyl Estradiol/Norgestimate,Metformin,Spironolactone
+encephalitis,Antivirals,Corticosteroids,Acyclovir,Dexamethasone,Phenytoin
+cyst of the eyelid,Warm Compresses,Surgical Intervention,Erythromycin ointment,,
+balanitis,Topical Antifungals,Corticosteroids,Clotrimazole cream,Hydrocortisone cream,Miconazole
+foreign body in the throat,Endoscopic Removal,,,,
+drug abuse (cocaine),Behavioral Therapy,Benzodiazepines (for agitation),Lorazepam,Diazepam,
+optic neuritis,IV Corticosteroids,,Methylprednisolone,Prednisone,
+alcohol withdrawal,Benzodiazepines,Thiamine,Chlordiazepoxide,Diazepam,Thiamine
+premature atrial contractions (pacs),Beta-blockers,Antiarrhythmics,Metoprolol,Atenolol,Flecainide
+hemiplegia,Physical Therapy,Muscle Relaxants,Baclofen,Tizanidine,Botulinum Toxin
+hammer toe,Orthotics,Surgical Intervention,Ibuprofen,,
+open wound of the cheek,Antibiotics,Wound Care,Cephalexin,Acetaminophen,Ibuprofen
+joint effusion,NSAIDs,Arthrocentesis,Ibuprofen,Naproxen,Meloxicam
+open wound of the knee,Antibiotics,Wound Care,Cephalexin,Acetaminophen,Ibuprofen
+meningioma,Surgical Intervention,Radiation Therapy,Dexamethasone (for swelling),,
+brain cancer,Antineoplastics,"Corticosteroids, Surgery",Temozolomide,Dexamethasone,Bevacizumab
+placental abruption,Obstetric Intervention,Blood Transfusion,Normal Saline,Packed Red Blood Cells,
+seasonal allergies (hay fever),Antihistamines,Nasal Corticosteroids,Cetirizine,Loratadine,Fluticasone nasal
+lung cancer,Antineoplastics,"Targeted Therapy, Surgery",Cisplatin,Pembrolizumab,Erlotinib
+primary kidney disease,Corticosteroids,Immunosuppressants,Prednisone,Cyclophosphamide,Mycophenolate
+uterine cancer,Surgical Intervention,"Radiation, Chemotherapy",Paclitaxel,Carboplatin,Megestrol
+dry eye of unknown cause,Artificial Tears,Cyclosporine Ophthalmic,Polyethylene Glycol drops,Cyclosporine drops,Lifitegrast drops
+fibrocystic breast disease,Analgesics,Oral Contraceptives,Ibuprofen,Acetaminophen,Ethinyl Estradiol
+fungal infection of the hair,Oral Antifungals,,Terbinafine,Griseofulvin,Itraconazole
+tooth abscess,Antibiotics,Dental Intervention,Amoxicillin,Clindamycin,Metronidazole
+envenomation from spider or animal bite,Antivenins,"Tetanus Toxoid, Antibiotics",Antivenin (specific),Tetanus Toxoid,Cephalexin
+vacterl syndrome,Surgical Intervention,Supportive Care,,,
+vertebrobasilar insufficiency,Antiplatelets,"Anticoagulants, Statins",Aspirin,Clopidogrel,Atorvastatin
+rectal disorder,Topical Corticosteroids,Laxatives,Hydrocortisone suppositories,Polyethylene Glycol,Docusate
+atonic bladder,Cholinergics (Bethanechol),Catheterization,Bethanechol,,
+benign paroxysmal positional vertical (bppv),Vestibular Suppressants,Canalith Repositioning,Meclizine,Diazepam,Promethazine
+blepharospasm,Botulinum Toxin Injections,,Botulinum Toxin,,
+sarcoidosis,Corticosteroids,Immunosuppressants,Prednisone,Methotrexate,Azathioprine
+metastatic cancer,Antineoplastics,Palliative Care,Morphine,Fentanyl,Ondansetron
+trigger finger (finger disorder),Corticosteroid Injections,"NSAIDs, Surgery",Methylprednisolone injection,Ibuprofen,Naproxen
+stye,Warm Compresses,Topical Antibiotics,Erythromycin ointment,Bacitracin ointment,
+hemochromatosis,Phlebotomy,Iron Chelating Agents,Deferoxamine,Deferasirox,
+osteochondroma,Surgical Intervention,Observation,Acetaminophen,Ibuprofen,
+cushing syndrome,Adrenolytic Agents,Surgical Intervention,Ketoconazole,Metyrapone,Mifepristone
+typhoid fever,Antibiotics,,Ciprofloxacin,Ceftriaxone,Azithromycin
+vitreous degeneration,Observation,Surgical Intervention (Vitrectomy),,,
+atrophic skin condition,Topical Emollients,Retinoids,White Petrolatum,Tretinoin cream,
+aspergillosis,Antifungals,,Voriconazole,Amphotericin B,Itraconazole
+uterine atony,Uterotonics (Oxytocin/Methylergonovine),,Oxytocin,Methylergonovine,Misoprostol
+trichinosis,Anthelmintics,Analgesics,Albendazole,Mebendazole,Prednisone
+whooping cough,Macrolide Antibiotics,,Azithromycin,Clarithromycin,Erythromycin
+open wound of the lip,Antibiotics,Wound Care,Cephalexin,Amoxicillin-Clavulanate,
+subacute thyroiditis,NSAIDs,"Beta-blockers, Corticosteroids",Ibuprofen,Propranolol,Prednisone
+oral mucosal lesion,Topical Corticosteroids,Antimicrobials,Triamcinolone dental paste,Chlorhexidine rinse,Lidocaine viscous
+open wound due to trauma,Antibiotics,"Tetanus Prophylaxis, Surgery",Cephalexin,Tetanus Toxoid,
+intracerebral hemorrhage,Antihypertensives,"Osmotic Diuretics, Surgery",Nicardipine,Labetalol,Mannitol
+alzheimer disease,Cholinesterase Inhibitors,NMDA Receptor Antagonists,Donepezil,Rivastigmine,Memantine
+vaginismus,Pelvic Floor Therapy,Vaginal Dilators,Botulinum Toxin (off-label),,
+systemic lupus erythematosis (sle),Antimalarials (Hydroxychloroquine),"Corticosteroids, Immunosuppressants",Hydroxychloroquine,Prednisone,Mycophenolate
+premature ovarian failure,Hormone Replacement Therapy (Estrogen/Progesterone),,Estradiol,Progesterone,
+thoracic outlet syndrome,Physical Therapy,"Analgesics, Surgery",Ibuprofen,Cyclobenzaprine,Gabapentin
+ganglion cyst,Observation,"Aspiration, Surgical Excision",Ibuprofen,,
+dislocation of the knee,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Morphine
+crohn disease,Corticosteroids,"Immunosuppressants, Biologics",Prednisone,Azathioprine,Infliximab
+postoperative infection,Antibiotics,Surgical Drainage,Vancomycin,Piperacillin-Tazobactam,Ceftriaxone
+folate deficiency,Folic Acid Supplements,,Folic Acid,,
+fluid overload,Diuretics,,Furosemide,Bumetanide,Torsemide
+atrial flutter,Antiarrhythmics,"Anticoagulants, Cardioversion",Amiodarone,Diltiazem,Apixaban
+skin disorder,Topical Corticosteroids,Emollients,Hydrocortisone cream,Triamcinolone cream,Clobetasol ointment
+floaters,Observation,Vitrectomy,,,
+tooth disorder,Dental Intervention,Analgesics,Acetaminophen,Ibuprofen,Amoxicillin
+heart attack,Antiplatelets,"Thrombolytics, Beta-blockers, Statins",Aspirin,Clopidogrel,Metoprolol
+open wound of the abdomen,Antibiotics,Surgical Intervention,Ceftriaxone,Metronidazole,
+fracture of the leg,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+oral thrush (yeast infection),Topical Antifungals (Nystatin/Clotrimazole),,Nystatin suspension,Clotrimazole troche,Fluconazole
+pityriasis rosea,Topical Corticosteroids,Antihistamines,Hydrocortisone cream,Cetirizine,Diphenhydramine
+allergy to animals,Antihistamines,Leukotriene Inhibitors,Cetirizine,Loratadine,Montelukast
+orthostatic hypotension,Fludrocortisone,Midodrine,Fludrocortisone,Midodrine,Droxidopa
+obstructive sleep apnea (osa),CPAP Therapy,Weight Loss,Modafinil (for daytime sleepiness),,
+hypokalemia,Potassium Supplements,,Potassium Chloride,Potassium Citrate,
+psoriasis,Topical Corticosteroids,"Vitamin D Analogues, Biologics",Clobetasol,Calcipotriene,Adalimumab
+dislocation of the shoulder,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+intussusception,Air or Barium Enema,Surgical Intervention,Acetaminophen,Ibuprofen,
+cervicitis,Antibiotics,,Azithromycin,Ceftriaxone,Doxycycline
+abscess of the pharynx,Antibiotics,Surgical Drainage,Clindamycin,Ampicillin-Sulbactam,Vancomycin
+primary thrombocythemia,Cytoreductive Agents (Hydroxyurea),Antiplatelets,Hydroxyurea,Aspirin,Anagrelide
+arthritis of the hip,NSAIDs,"Physical Therapy, Joint Replacement",Ibuprofen,Meloxicam,Acetaminophen
+decubitus ulcer,Wound Care,"Topical Antibiotics, Pressure Relief",Silver Sulfadiazine,Mupirocin,
+hypernatremia,IV Fluids (Hypotonic Solutions),,Half Normal Saline (0.45% NaCl),Dextrose 5% in Water,
+sensorineural hearing loss,Hearing Aids,Cochlear Implants,Prednisone (if sudden),,
+chronic ulcer,Wound Care,"Debridement, Antibiotics",Cephalexin,Clindamycin,
+osteoporosis,Bisphosphonates,"Calcium, Vitamin D",Alendronate,Zoledronic Acid,Calcium/Vitamin D
+ileus,Bowel Rest,"IV Fluids, Decompression",Normal Saline,Metoclopramide,
+sickle cell crisis,Analgesics (Opioids),"IV Fluids, Hydroxyurea",Morphine,Hydromorphone,Hydroxyurea
+urethritis,Antibiotics,,Azithromycin,Ceftriaxone,Doxycycline
+prostatitis,Antibiotics,"Alpha-blockers, NSAIDs",Ciprofloxacin,Tamsulosin,Ibuprofen
+otitis externa (swimmer's ear),Ophthalmic/Otic Antibiotics,Corticosteroids,Ciprofloxacin-Dexamethasone drops,Neomycin-Polymyxin-HC drops,Acetic Acid drops
+poisoning due to anticonvulsants,Supportive Care,Activated Charcoal,Activated Charcoal,,
+testicular torsion,Surgical Intervention,,Acetaminophen,Ibuprofen,Morphine
+tricuspid valve disease,Diuretics,Surgical Intervention,Furosemide,Spironolactone,
+urethral stricture,Surgical Intervention (Dilation/Urethroplasty),,,,
+vitamin d deficiency,Vitamin D Supplements (Cholecalciferol/Ergocalciferol),,Cholecalciferol (D3),Ergocalciferol (D2),
+hydatidiform mole,Surgical Evacuation (D&C),Monitor hCG,,,
+pain disorder affecting the neck,Analgesics,"Muscle Relaxants, Physical Therapy",Ibuprofen,Cyclobenzaprine,Acetaminophen
+tuberculosis,Antimycobacterials (Isoniazid/Rifampin),,Isoniazid,Rifampin,Ethambutol
+pelvic fistula,Surgical Intervention,Antibiotics,Ceftriaxone,Metronidazole,
+acute bronchiolitis,Supportive Care,"Oxygen, Hydration",Normal Saline (Nasal spray),Acetaminophen,
+presbyopia,Corrective Lenses,,,,
+dementia,Cholinesterase Inhibitors,Antipsychotics (for agitation),Donepezil,Rivastigmine,Memantine
+insect bite,Topical Corticosteroids,Antihistamines,Hydrocortisone cream,Diphenhydramine,Cetirizine
+paroxysmal ventricular tachycardia,Antiarrhythmics (Amiodarone),Cardioversion,Amiodarone,Lidocaine,Sotalol
+congenital heart defect,Surgical Intervention,"Prostaglandins, Diuretics",Alprostadil,Furosemide,
+connective tissue disorder,Corticosteroids,Immunosuppressants,Prednisone,Methotrexate,Hydroxychloroquine
+foreign body in the eye,Ophthalmic Irrigation,Manual Removal,Tetracaine drops (for pain),Erythromycin ointment,
+poisoning due to gas,Oxygen Therapy,Supportive Care,100% Oxygen,,
+pyogenic skin infection,Antibiotics,,Cephalexin,Clindamycin,Doxycycline
+endometrial hyperplasia,Progestins,Surgical Intervention,Medroxyprogesterone,Levonorgestrel IUD,
+acanthosis nigricans,Insulin Sensitizers (Metformin),"Weight Loss, Keratolytics",Metformin,Salicylic acid,Ammonium lactate
+central atherosclerosis,Statins,"Antiplatelets, Antihypertensives",Atorvastatin,Aspirin,Lisinopril
+viral exanthem,Supportive Care,Antipyretics,Acetaminophen,Ibuprofen,Diphenhydramine
+noninfectious gastroenteritis,Oral Rehydration,Antidiarrheals,Oral Rehydration Salts,Loperamide,Bismuth Subsalicylate
+benign prostatic hyperplasia (bph),Alpha-blockers,5-Alpha Reductase Inhibitors,Tamsulosin,Finasteride,Dutasteride
+menopause,Hormone Replacement Therapy,SNRIs (for hot flashes),Estradiol,Progesterone,Venlafaxine
+primary immunodeficiency,IVIG,Prophylactic Antibiotics,Intravenous Immunoglobulin,Amoxicillin,Trimethoprim-Sulfamethoxazole
+ovarian cancer,Antineoplastics,Surgical Intervention,Carboplatin,Paclitaxel,Olaparib
+cataract,Surgical Intervention (Lens Replacement),,,,
+dislocation of the hip,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Morphine
+spinal stenosis,NSAIDs,"Epidural Steroid Injections, Surgery",Ibuprofen,Meloxicam,Methylprednisolone injection
+intestinal obstruction,Nasogastric Decompression,"IV Fluids, Surgery",Normal Saline,Morphine,Ondansetron
+heart contusion,Analgesics,"Antiarrhythmics, Supportive Care",Acetaminophen,Amiodarone,
+congenital malformation syndrome,Surgical Intervention,Supportive Care,,,
+sporotrichosis,Antifungals (Itraconazole),,Itraconazole,Amphotericin B,Terbinafine
+lymphangitis,Antibiotics,Analgesics,Cephalexin,Amoxicillin-Clavulanate,Ibuprofen
+wernicke korsakoff syndrome,Thiamine (Vitamin B1) Supplements,,Thiamine IV,,
+intestinal disease,Corticosteroids,"Immunosuppressants, 5-ASAs",Prednisone,Mesalamine,Azathioprine
+acute bronchitis,Cough Suppressants,Bronchodilators,Dextromethorphan,Guaifenesin,Albuterol
+persistent vomiting of unknown cause,Antiemetics,IV Fluids,Ondansetron,Promethazine,Normal Saline
+open wound of the foot,Antibiotics,Wound Care,Cephalexin,Clindamycin,Doxycycline
+myocarditis,Supportive Care,"ACE Inhibitors, Beta-blockers",Lisinopril,Metoprolol,Spironolactone
+preeclampsia,Antihypertensives,"Magnesium Sulfate, Delivery",Labetalol,Magnesium Sulfate,Nifedipine
+ischemic heart disease,Antiplatelets,"Beta-blockers, Nitrates, Statins",Aspirin,Metoprolol,Nitroglycerin
+neurofibromatosis,Surgical Excision,MEK Inhibitors,Selumetinib,Gabapentin (for nerve pain),
+chickenpox,Antivirals,"Antipyretics, Antihistamines",Acyclovir,Acetaminophen,Diphenhydramine
+pancreatic cancer,Antineoplastics,"Surgical Intervention, Palliative Care",Gemcitabine,Paclitaxel,FOLFIRINOX
+neuropathy due to drugs,Analgesics (Gabapentin/Pregabalin),"SNRIs, Drug Discontinuation",Gabapentin,Pregabalin,Duloxetine
+croup,Corticosteroids (Dexamethasone),Racemic Epinephrine,Dexamethasone,Racemic Epinephrine,
+idiopathic excessive menstruation,NSAIDs,"Hormonal Contraceptives, Tranexamic Acid",Ibuprofen,Ethinyl Estradiol,Tranexamic Acid
+amblyopia,Vision Therapy (Patching/Atropine Drops),,Atropine drops,,
+meckel diverticulum,Surgical Intervention,,,,
+dislocation of the wrist,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,
+ear drum damage,Observation,Surgical Intervention (Tympanoplasty),Acetaminophen,Ibuprofen,
+erectile dysfunction,PDE5 Inhibitors (Sildenafil),Alprostadil,Sildenafil,Tadalafil,Alprostadil
+temporary or benign blood in urine,Observation,Hydration,,,
+kidney disease due to longstanding hypertension,Antihypertensives (ACE Inhibitors/ARBs),,Lisinopril,Losartan,Amlodipine
+chondromalacia of the patella,NSAIDs,Physical Therapy,Ibuprofen,Naproxen,Acetaminophen
+onychomycosis,Oral or Topical Antifungals,,Terbinafine,Itraconazole,Ciclopirox lacquer
+urethral disorder,Alpha-blockers,Surgical Intervention,Tamsulosin,Alfuzosin,
+lyme disease,Antibiotics (Doxycycline/Amoxicillin),,Doxycycline,Amoxicillin,Cefuroxime
+iron deficiency anemia,Iron Supplements,,Ferrous Sulfate,Ferrous Gluconate,Iron Sucrose IV
+acute respiratory distress syndrome (ards),Mechanical Ventilation,"Supportive Care, Corticosteroids",Dexamethasone,Propofol (sedation),Cisatracurium (paralytic)
+toxic multinodular goiter,Antithyroid Agents,"Radioactive Iodine, Surgery",Methimazole,Propylthiouracil,Propranolol
+open wound of the finger,Antibiotics,"Wound Care, Tetanus Prophylaxis",Cephalexin,Tetanus Toxoid,
+autonomic nervous system disorder,Fludrocortisone,"Midodrine, Supportive Care",Fludrocortisone,Midodrine,Pyridostigmine
+psychosexual disorder,Psychotherapy,Behavioral Therapy,Sildenafil (if ED),Sertraline (for underlying anxiety),
+anemia,Iron,"Vitamin B12, Erythropoiesis-Stimulating Agents",Ferrous Sulfate,Cyanocobalamin,Epoetin alfa
+tendinitis,NSAIDs,"Rest, Corticosteroid Injections",Ibuprofen,Naproxen,Methylprednisolone injection
+common cold,Decongestants,"Antihistamines, Analgesics",Pseudoephedrine,Loratadine,Acetaminophen
+amyotrophic lateral sclerosis (als),Glutamate Antagonists (Riluzole),Free Radical Scavengers (Edaravone),Riluzole,Edaravone,Baclofen (for spasms)
+central retinal artery or vein occlusion,Ocular Massage,"Intraocular Pressure Lowering Agents, Anti-VEGF",Timolol drops,Acetazolamide,Bevacizumab
+paroxysmal supraventricular tachycardia,Vagal Maneuvers,"Adenosine, Beta-blockers",Adenosine,Metoprolol,Verapamil
+venous insufficiency,Compression Therapy,"Venoactive Drugs, Surgery",Diosmin,Aspirin,
+trichomonas infection,Antiprotozoals (Metronidazole),,Metronidazole,Tinidazole,
+acne,Topical Retinoids,"Antibiotics, Isotretinoin",Tretinoin cream,Doxycycline,Isotretinoin
+depression,Antidepressants (SSRIs/SNRIs),Psychotherapy,Sertraline,Escitalopram,Duloxetine
+drug abuse,Addiction Treatment,"Behavioral Therapy, MAT (Buprenorphine/Methadone)",Buprenorphine,Methadone,Naltrexone
+urinary tract obstruction,Surgical Intervention,Catheterization,Tamsulosin,Oxybutynin,
+diabetes insipidus,Desmopressin (Synthetic Vasopressin),Diuretics (Thiazides),Desmopressin,Hydrochlorothiazide,
+iridocyclitis,Topical Corticosteroids,Cycloplegics,Prednisolone drops,Cyclopentolate drops,Atropine drops
+varicocele of the testicles,Surgical Intervention,Embolization,Ibuprofen,Acetaminophen,
+irritable bowel syndrome,Antispasmodics,"Laxatives, Antidiarrheals",Dicyclomine,Polyethylene Glycol,Loperamide
+fracture of the foot,Orthopedic Intervention,Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+ovarian cyst,Observation,"Oral Contraceptives, Surgical Intervention",Ethinyl Estradiol,Ibuprofen,
+chlamydia,Antibiotics (Azithromycin/Doxycycline),,Azithromycin,Doxycycline,Levofloxacin
+parasitic disease,Antiparasitics,Anthelmintics,Albendazole,Ivermectin,Praziquantel
+fracture of the jaw,Orthopedic/Maxillofacial Surgery,Analgesics,Acetaminophen,Ibuprofen,Clindamycin (if open)
+lipoma,Surgical Excision,,,,
+female genitalia infection,Antibiotics,Antifungals,Metronidazole,Fluconazole,Clindamycin
+pulmonary hypertension,Endothelin Receptor Antagonists,"PDE5 Inhibitors, Prostacyclins",Bosentan,Sildenafil,Epoprostenol
+thyroid nodule,Observation,"Surgical Intervention, Radioactive Iodine",Levothyroxine (suppression therapy),,
+broken tooth,Dental Intervention (Crown/Extraction),,Ibuprofen,Acetaminophen,
+dumping syndrome,Dietary Modifications,Somatostatin Analogs (Octreotide),Octreotide,Acarbose,
+lymphadenitis,Antibiotics,Analgesics,Cephalexin,Amoxicillin-Clavulanate,Ibuprofen
+injury to the face,Analgesics,"Surgical Intervention, Wound Care",Acetaminophen,Ibuprofen,
+aortic valve disease,Surgical Intervention (Valve Replacement),Diuretics,Furosemide,Lisinopril,Metoprolol
+rheumatoid arthritis,DMARDs (Methotrexate),"Biologics, NSAIDs",Methotrexate,Adalimumab,Ibuprofen
+spermatocele,Observation,Surgical Intervention,Ibuprofen,,
+impetigo,Topical or Oral Antibiotics,,Mupirocin ointment,Cephalexin,Dicloxacillin
+anal fistula,Surgical Intervention,,Ibuprofen,Acetaminophen,
+hypothermia,Rewarming Therapy,Warmed IV Fluids,Warm Normal Saline,,
+oppositional disorder,Behavioral Therapy,Parent Training,Methylphenidate (if comorbid ADHD),,
+migraine,Triptans,"NSAIDs, CGRP Antagonists",Sumatriptan,Ibuprofen,Rimegepant
+diabetic peripheral neuropathy,Gabapentinoids,SNRIs (Duloxetine),Gabapentin,Pregabalin,Duloxetine
+testicular disorder,Analgesics,Surgical Intervention,Acetaminophen,Ibuprofen,
+gestational diabetes,Dietary Management,Insulins,Insulin NPH,Insulin Lispro,Metformin
+hidradenitis suppurativa,Antibiotics,"Biologics (Adalimumab), Surgery",Doxycycline,Clindamycin,Adalimumab
+valley fever,Antifungals (Fluconazole/Itraconazole),,Fluconazole,Itraconazole,Amphotericin B
+conjunctivitis due to bacteria,Ophthalmic Antibiotics,,Erythromycin ointment,Polymyxin B/Trimethoprim drops,Ofloxacin drops
+lewy body dementia,Cholinesterase Inhibitors,"Levodopa, Atypical Antipsychotics",Donepezil,Rivastigmine,Carbidopa-Levodopa
+multiple myeloma,Proteasome Inhibitors,"Immunomodulators, Chemotherapy",Bortezomib,Lenalidomide,Dexamethasone
+head injury,Observation,"Analgesics, Neurosurgical Intervention",Acetaminophen,Levetiracetam (for seizures),Mannitol (for swelling)
+ascending cholangitis,IV Antibiotics,Biliary Drainage (ERCP),Piperacillin-Tazobactam,Ceftriaxone,Metronidazole
+idiopathic irregular menstrual cycle,Hormonal Contraceptives,Progestins,Ethinyl Estradiol,Medroxyprogesterone,Levonorgestrel IUD
+interstitial lung disease,Corticosteroids,"Antifibrotics, Immunosuppressants",Prednisone,Nintedanib,Mycophenolate
+mononeuritis,Analgesics,"Corticosteroids, Physical Therapy",Gabapentin,Prednisone,Duloxetine
+malaria,Antimalarials (Artemisinin-based combinations),,Artemether-Lumefantrine,Chloroquine,Atovaquone-Proguanil
+somatization disorder,Psychotherapy,Antidepressants,Sertraline,Fluoxetine,Duloxetine
+hypovolemia,IV Fluids (Crystalloids/Colloids),Blood Transfusion,Normal Saline,Lactated Ringers,Packed Red Blood Cells
+schizophrenia,Antipsychotics,,Risperidone,Olanzapine,Aripiprazole
+knee ligament or meniscus tear,RICE Therapy,"NSAIDs, Arthroscopic Surgery",Ibuprofen,Naproxen,Acetaminophen
+endocarditis,IV Antibiotics,Surgical Intervention,Vancomycin,Ceftriaxone,Gentamicin
+sepsis,Broad-Spectrum IV Antibiotics,"IV Fluids, Vasopressors",Vancomycin,Piperacillin-Tazobactam,Norepinephrine
+heat stroke,Rapid Cooling,IV Fluids,Normal Saline,Diazepam (for shivering),
+cholecystitis,IV Antibiotics,"Analgesics, Surgical Intervention (Cholecystectomy)",Ceftriaxone,Metronidazole,Morphine
+cardiac arrest,CPR,"Defibrillation, Epinephrine",Epinephrine,Amiodarone,Lidocaine
+cardiomyopathy,Beta-blockers,"ACE Inhibitors, Diuretics",Metoprolol,Lisinopril,Spironolactone
+social phobia,Antidepressants (SSRIs),Cognitive Behavioral Therapy,Sertraline,Paroxetine,Propranolol (for performance)
+meningitis,IV Antibiotics or Antivirals,Corticosteroids (Dexamethasone),Ceftriaxone,Vancomycin,Dexamethasone
+spherocytosis,Folic Acid Supplements,Splenectomy,Folic Acid,,
+hormone disorder,Hormone Replacement Therapy,Receptor Agonists or Antagonists,Levothyroxine,Testosterone,Estradiol
+raynaud disease,Calcium Channel Blockers,Vasodilators,Amlodipine,Nifedipine,Sildenafil
+reactive arthritis,NSAIDs,"Antibiotics (for underlying infection), Corticosteroids",Naproxen,Indomethacin,Prednisone
+scabies,Scabicides (Permethrin Cream/Oral Ivermectin),,Permethrin cream,Ivermectin,Crotamiton lotion
+ear wax impaction,Cerumenolytics,"Ear Irrigation, Manual Removal",Carbamide Peroxide drops,Mineral oil drops,
+hypertension of pregnancy,Antihypertensives (Labetalol/Methyldopa),Delivery,Labetalol,Methyldopa,Nifedipine
+peripheral arterial embolism,Anticoagulants (Heparin),"Thrombolytics, Embolectomy",Heparin,Alteplase (tPA),Warfarin
+rosacea,Topical Antibiotics (Metronidazole),"Azelaic Acid, Oral Antibiotics",Metronidazole gel,Azelaic acid,Doxycycline
+fracture of the skull,Neurosurgical Intervention,"Observation, Analgesics",Acetaminophen,Levetiracetam,
+uveitis,Topical or Systemic Corticosteroids,Immunosuppressants,Prednisolone drops,Dexamethasone,Methotrexate
+fracture of the facial bones,Maxillofacial Surgery,"Analgesics, Antibiotics",Acetaminophen,Ibuprofen,Clindamycin
+tracheitis,Broad-Spectrum Antibiotics,Airway Management,Ceftriaxone,Vancomycin,Acetaminophen
+jaw disorder,NSAIDs,"Muscle Relaxants, Mouth Guards",Ibuprofen,Cyclobenzaprine,
+perirectal infection,Antibiotics,Surgical Drainage,Ciprofloxacin,Metronidazole,Amoxicillin-Clavulanate
+breast cyst,Aspiration,Observation,Acetaminophen,Ibuprofen,
+post-traumatic stress disorder (ptsd),Antidepressants (SSRIs/SNRIs),Trauma-Focused Therapy,Sertraline,Paroxetine,Prazosin (for nightmares)
+kidney cancer,Antineoplastics,"Targeted Therapy, Surgical Intervention (Nephrectomy)",Sunitinib,Pazopanib,Nivolumab
+vulvar cancer,Surgical Intervention,"Radiation Therapy, Chemotherapy",Cisplatin,Fluorouracil,
+blepharitis,Eyelid Hygiene,"Warm Compresses, Topical Antibiotics or Steroids",Erythromycin ointment,Bacitracin ointment,Fluorometholone drops
+celiac disease,Strict Gluten-Free Diet,Nutritional Supplements,Vitamin D,Iron,Folic Acid
+cystitis,Antibiotics,Urinary Analgesics (Phenazopyridine),Nitrofurantoin,Trimethoprim-Sulfamethoxazole,Phenazopyridine
+sickle cell anemia,Hydroxyurea,"Folic Acid, Pain Management, Blood Transfusions",Hydroxyurea,Folic Acid,Morphine
+subconjunctival hemorrhage,Observation,Artificial Tears,Polyethylene Glycol drops,,
+hemorrhoids,Topical Hydrocortisone,"Witch Hazel, High-Fiber Diet, Surgery",Hydrocortisone cream,Witch Hazel pads,Docusate
+contact dermatitis,Topical Corticosteroids,"Antihistamines, Avoidance of Allergen",Hydrocortisone cream,Triamcinolone cream,Diphenhydramine
+sinus bradycardia,Atropine,Pacemaker Placement (if symptomatic),Atropine,Epinephrine,Dopamine
+high blood pressure,Antihypertensives (ACEi/ARBs/Diuretics/CCBs),,Lisinopril,Amlodipine,Hydrochlorothiazide
+pelvic inflammatory disease,Broad-Spectrum Antibiotics (Ceftriaxone/Doxycycline),,Ceftriaxone,Doxycycline,Metronidazole
+liver disease,Hepatoprotectants,"Diuretics, Antiviral Therapy (if infectious)",Spironolactone,Furosemide,Lactulose
+chronic constipation,Osmotic Laxatives,"Stimulant Laxatives, Fiber Supplements",Polyethylene Glycol,Bisacodyl,Psyllium
+thyroid cancer,Surgical Intervention (Thyroidectomy),Radioactive Iodine,Levothyroxine (suppression),Radioactive Iodine 131,
+flu,Antivirals (Oseltamivir),"Antipyretics, Analgesics",Oseltamivir,Acetaminophen,Ibuprofen
+friedrich ataxia,Antioxidants,"Physical Therapy, Supportive Care",Idebenone,Coenzyme Q10,Baclofen
+tic (movement) disorder,Alpha-2 Agonists (Clonidine/Guanfacine),Antipsychotics,Clonidine,Guanfacine,Haloperidol
+skin polyp,Surgical Excision,Cryotherapy,,,
+brachial neuritis,Analgesics,"Oral Corticosteroids, Physical Therapy",Gabapentin,Prednisone,Ibuprofen
+cervical cancer,Surgical Intervention,"Radiation Therapy, Chemotherapy",Cisplatin,Paclitaxel,Bevacizumab
+adrenal adenoma,Observation,Surgical Intervention (Adrenalectomy) if hormonally active,,,
+esophagitis,Proton Pump Inhibitors,H2 Blockers,Omeprazole,Pantoprazole,Famotidine
+gas gangrene,IV Antibiotics (Penicillin/Clindamycin),Surgical Debridement,Penicillin G,Clindamycin,Vancomycin
+yeast infection,Antifungals (Fluconazole/Miconazole),,Fluconazole,Miconazole,Clotrimazole
+spina bifida,Surgical Intervention,Supportive Care,Oxybutynin (for bladder),Folic Acid (prevention),
+drug poisoning due to medication,Specific Antidotes,"Activated Charcoal, Supportive Care",Activated Charcoal,Naloxone (Opioids),Flumazenil (Benzos)
+alcoholic liver disease,Abstinence,"Nutritional Support, Corticosteroids (for severe hepatitis)",Prednisolone,Thiamine,Folic Acid
+malignant hypertension,IV Antihypertensives (Labetalol/Nitroprusside),,Labetalol,Nitroprusside,Nicardipine
+diverticulitis,Antibiotics,"Liquid Diet, Surgical Intervention (if complicated)",Ciprofloxacin,Metronidazole,Amoxicillin-Clavulanate
+moyamoya disease,Surgical Revascularization,Antiplatelets (Aspirin),Aspirin,,
+heat exhaustion,Cooling Measures,"Oral Rehydration, IV Fluids",Oral Rehydration Salts,Normal Saline,
+psychotic disorder,Antipsychotics,Psychiatric Support,Risperidone,Olanzapine,Haloperidol
+frostbite,Rapid Rewarming,"Analgesics, Thrombolytics, Wound Care",Ibuprofen,Alteplase (tPA),Aloe Vera
+atrophy of the corpus cavernosum,PDE5 Inhibitors,Penile Implants,Sildenafil,Tadalafil,Alprostadil
+smoking or tobacco addiction,Nicotine Replacement Therapy,"Bupropion, Varenicline",Nicotine patch,Bupropion,Varenicline
+sprain or strain,RICE Therapy,"NSAIDs, Physical Therapy",Ibuprofen,Naproxen,Acetaminophen
+essential tremor,Beta-blockers (Propranolol),Anticonvulsants (Primidone),Propranolol,Primidone,Topiramate
+open wound of the ear,Antibiotics,"Wound Care, Suture Repair",Cephalexin,Acetaminophen,Ibuprofen
+foreign body in the nose,Manual Extraction,Forceps Removal,,,
+idiopathic painful menstruation,NSAIDs,Hormonal Contraceptives,Ibuprofen,Naproxen,Ethinyl Estradiol
+down syndrome,Early Intervention,"Supportive Therapy, Treat Associated Conditions",Levothyroxine (if hypothyroid),,
+idiopathic infrequent menstruation,Hormonal Contraceptives,Progestin Therapy,Ethinyl Estradiol,Medroxyprogesterone,
+pneumothorax,Needle Decompression,"Chest Tube Insertion, Observation",Oxygen,,
+de quervain disease,NSAIDs,"Corticosteroid Injections, Splinting",Ibuprofen,Naproxen,Methylprednisolone injection
+fracture of the vertebra,Orthopedic Intervention,"Bracing, Analgesics",Acetaminophen,Ibuprofen,Oxycodone
+human immunodeficiency virus infection (hiv),Antiretroviral Therapy (ART),,Bictegravir,Tenofovir,Emtricitabine
+mumps,Supportive Care,"Analgesics, Antipyretics",Acetaminophen,Ibuprofen,
+subarachnoid hemorrhage,Neurosurgical Intervention (Clipping/Coiling),Nimodipine,Nimodipine,Levetiracetam,Acetaminophen
+acute fatty liver of pregnancy (aflp),Prompt Delivery,"Supportive Care, ICU Monitoring",Normal Saline,Fresh Frozen Plasma (if bleeding),
+ectropion,Lubricating Eye Drops,Surgical Correction,Polyethylene Glycol drops,Erythromycin ointment,
+scar,Topical Silicone Gel,"Corticosteroid Injections, Laser Therapy",Silicone gel,Triamcinolone injection,
+lactose intolerance,Lactase Enzyme Supplements,Dairy Avoidance,Lactase enzyme,,
+eustachian tube dysfunction (ear disorder),Nasal Decongestants,"Nasal Corticosteroids, Auto-insufflation",Pseudoephedrine,Fluticasone nasal,Oxymetazoline nasal
+appendicitis,Surgical Intervention (Appendectomy),Antibiotics,Ceftriaxone,Metronidazole,Acetaminophen
+graves disease,Antithyroid Agents (Methimazole),"Radioactive Iodine, Beta-blockers",Methimazole,Propylthiouracil,Propranolol
+dissociative disorder,Psychotherapy,Cognitive Behavioral Therapy,Sertraline,Fluoxetine,
+open wound of the face,Wound Care,"Sutures, Antibiotics",Cephalexin,Acetaminophen,Ibuprofen
+dislocation of the vertebra,Spinal Immobilization,"Orthopedic/Neurosurgery, Analgesics",Acetaminophen,Ibuprofen,Morphine
+phimosis,Topical Corticosteroids,Circumcision,Betamethasone cream,Hydrocortisone cream,
+hyperemesis gravidarum,IV Fluids,"Antiemetics (Ondansetron/Promethazine), Vitamin B6",Ondansetron,Promethazine,Pyridoxine (Vitamin B6)
+pregnancy,Prenatal Vitamins,Obstetric Care,Prenatal Vitamins,Folic Acid,Iron
+thalassemia,Blood Transfusions,"Iron Chelation Therapy, Folic Acid Supplements",Deferasirox,Deferoxamine,Folic Acid
+placenta previa,Pelvic Rest,"Monitor Bleeding, Cesarean Delivery",Betamethasone (for fetal lungs),Normal Saline,
+epidural hemorrhage,Neurosurgical Evacuation,Supportive Care,Mannitol,Levetiracetam,
+septic arthritis,IV Antibiotics,Joint Drainage (Arthrocentesis),Vancomycin,Ceftriaxone,Cefazolin
+athlete's foot,Topical Antifungals (Terbinafine/Clotrimazole),,Terbinafine cream,Clotrimazole cream,Ketoconazole cream
+pleural effusion,Thoracentesis,"Diuretics (if heart failure), Treat Underlying Cause",Furosemide,Spironolactone,
+aphakia,Corrective Lenses,Intraocular Lens Implantation,,,
+vulvar disorder,Topical Corticosteroids,"Emollients, Antifungals",Hydrocortisone cream,Clotrimazole cream,
+sialoadenitis,Hydration,"Sialogogues (Sour Candies), Antibiotics",Amoxicillin-Clavulanate,Pilocarpine,Ibuprofen
+gynecomastia,Observation,"Anti-estrogens (Tamoxifen), Surgical Excision",Tamoxifen,Raloxifene,
+urinary tract infection,Antibiotics,,Nitrofurantoin,Trimethoprim-Sulfamethoxazole,Ciprofloxacin
+histoplasmosis,Antifungals (Itraconazole/Amphotericin B),,Itraconazole,Amphotericin B,Ketoconazole
+erythema multiforme,Topical Corticosteroids,"Oral Antihistamines, Treat Underlying Cause",Hydrocortisone cream,Cetirizine,Diphenhydramine
+scoliosis,Observation,"Bracing, Spinal Fusion Surgery",Ibuprofen,Acetaminophen,
+bunion,Wide Shoes,"Orthotics, Analgesics, Surgical Correction",Ibuprofen,Acetaminophen,
+arrhythmia,Antiarrhythmics,"Beta-blockers, Ablation, Pacemaker",Amiodarone,Metoprolol,Diltiazem
+trigeminal neuralgia,Anticonvulsants (Carbamazepine),"Muscle Relaxants, Surgery",Carbamazepine,Oxcarbazepine,Gabapentin
+ankylosing spondylitis,NSAIDs,"TNF Inhibitors (Biologics), Physical Therapy",Naproxen,Celecoxib,Adalimumab
+peripheral nerve disorder,Analgesics (Gabapentinoids),"Corticosteroids, Physical Therapy",Gabapentin,Pregabalin,Duloxetine
+sebaceous cyst,Observation,"Incision and Drainage, Surgical Excision",Cephalexin (if infected),Ibuprofen,
+poisoning due to antipsychotics,Supportive Care,"IV Fluids, Specific Antidotes (e.g. Benztropine for EPS)",Normal Saline,Benztropine,Diphenhydramine
+neurosis,Psychotherapy,"Anxiolytics, Antidepressants",Sertraline,Escitalopram,Alprazolam
+prostate cancer,Androgen Deprivation Therapy,"Radiation, Prostatectomy",Leuprolide,Bicalutamide,Abiraterone
+cerebral edema,Osmotic Diuretics (Mannitol),Corticosteroids (Dexamethasone for tumors),Mannitol,Dexamethasone,Hypertonic Saline
+dislocation of the finger,Reduction (Orthopedic Intervention),"Splinting, Analgesics",Acetaminophen,Ibuprofen,
+birth trauma,Supportive Care,"Physical Therapy, Surgical Intervention (if severe)",,,
+chronic pancreatitis,Pancreatic Enzyme Replacement Therapy (PERT),"Analgesics, Low-Fat Diet",Pancrelipase,Acetaminophen,Ibuprofen
+hematoma,Observation,"Ice, Surgical Evacuation",Acetaminophen,Ibuprofen,
+carcinoid syndrome,Somatostatin Analogs (Octreotide),"Antidiarrheals, Surgery",Octreotide,Lanreotide,Loperamide
+open wound of the head,Wound Cleaning,"Sutures, Antibiotics, Tetanus Prophylaxis",Cephalexin,Acetaminophen,Tetanus Toxoid
+seborrheic keratosis,Observation,"Cryotherapy, Electrosurgery",,,
+burn,Topical Antimicrobials (Silver Sulfadiazine),"Fluid Resuscitation, Analgesics",Silver Sulfadiazine,Morphine,Lactated Ringers
+spontaneous abortion,Expectant Management,"Misoprostol, Dilation and Curettage (D&C)",Misoprostol,Mifepristone,Ibuprofen
+genital herpes,Antivirals (Valacyclovir/Acyclovir),,Valacyclovir,Acyclovir,Famciclovir
+adjustment reaction,Psychotherapy,"Counseling, Short-term Anxiolytics",Lorazepam,Alprazolam,Sertraline
+gallstone,Observation,"Ursodeoxycholic Acid, Surgical Intervention (Cholecystectomy)",Ursodeoxycholic Acid,Ibuprofen,Ketorolac
+multiple sclerosis,Disease-Modifying Therapies (Interferons/Ocrelizumab),Corticosteroids (for flares),Interferon beta-1a,Ocrelizumab,Methylprednisolone
+zenker diverticulum,Surgical or Endoscopic Intervention,,,,
+fracture of the pelvis,Orthopedic Intervention,"Pelvic Binder, Analgesics, Physical Therapy",Acetaminophen,Ibuprofen,Morphine
+pneumoconiosis,Supportive Care,"Oxygen Therapy, Bronchodilators",Albuterol,Tiotropium,Oxygen
+hyperlipidemia,Statins,"Fibrates, Diet and Exercise",Atorvastatin,Rosuvastatin,Fenofibrate
+ulcerative colitis,5-Aminosalicylates (Mesalamine),"Corticosteroids, Biologics",Mesalamine,Prednisone,Infliximab
+male genitalia infection,Antibiotics,"Antifungals, Analgesics",Doxycycline,Ceftriaxone,Fluconazole
+hpv,Observation,"Cryotherapy or Excision (for warts/lesions), HPV Vaccine (Preventative)",Imiquimod cream,Podofilox,HPV Vaccine
+angina,Nitrates (Nitroglycerin),"Beta-blockers, Calcium Channel Blockers",Nitroglycerin,Metoprolol,Amlodipine
+injury to the spinal cord,Immobilization,"Corticosteroids, Surgical Intervention, Rehab",Methylprednisolone,Gabapentin,Baclofen
+nasal polyp,Intranasal Corticosteroids,"Oral Corticosteroids, Surgical Excision",Fluticasone nasal,Mometasone nasal,Prednisone
+lichen simplex,High-Potency Topical Corticosteroids,Antihistamines,Clobetasol ointment,Hydroxyzine,Cetirizine
+trichiasis,Epilation,"Electrolysis, Eyelid Surgery",Artificial Tears,,
+acariasis,Acaricides (Permethrin/Ivermectin),,Permethrin cream,Ivermectin,
+colorectal cancer,Surgical Intervention,"Chemotherapy, Radiation",Fluorouracil,Oxaliplatin,Capecitabine
+skin pigmentation disorder,Topical Lightening Agents (Hydroquinone),"Laser Therapy, Sunscreen",Hydroquinone cream,Tretinoin cream,
+factitious disorder,Psychotherapy,Psychiatric Counseling,,,
+lymphogranuloma venereum,Antibiotics (Doxycycline),,Doxycycline,Erythromycin,Azithromycin
+galactorrhea of unknown cause,Dopamine Agonists (Cabergoline/Bromocriptine),,Cabergoline,Bromocriptine,
+g6pd enzyme deficiency,Avoidance of Triggers (Fava beans/Certain drugs),Supportive Care,Folic Acid,,
+nerve impingement near the shoulder,Physical Therapy,"NSAIDs, Corticosteroid Injections",Ibuprofen,Naproxen,Methylprednisolone injection
+toxoplasmosis,Antiprotozoals (Pyrimethamine + Sulfadiazine),,Pyrimethamine,Sulfadiazine,Leucovorin
+fibroadenoma,Observation,Surgical Excision,Acetaminophen,Ibuprofen,
+open wound of the hand,Wound Cleaning,"Sutures, Antibiotics, Tetanus Prophylaxis",Cephalexin,Acetaminophen,Tetanus Toxoid
+missed abortion,Misoprostol,Dilation and Curettage (D&C),Misoprostol,Mifepristone,Ibuprofen
+diabetic ketoacidosis,IV Regular Insulin,"IV Fluids, Electrolyte Replacement",Regular Insulin,Normal Saline,Potassium Chloride
+granuloma inguinale,Antibiotics (Azithromycin/Doxycycline),,Azithromycin,Doxycycline,Ciprofloxacin
+obsessive compulsive disorder (ocd),Antidepressants (SSRIs),Cognitive Behavioral Therapy (CBT),Fluoxetine,Sertraline,Fluvoxamine
+injury of the ankle,RICE Therapy,"Analgesics, Bracing, Physical Therapy",Acetaminophen,Ibuprofen,Naproxen
+hyponatremia,Fluid Restriction,"Hypertonic Saline (if severe), Vasopressin Antagonists",3% Hypertonic Saline,Tolvaptan,Conivaptan
+stricture of the esophagus,Endoscopic Dilation,Proton Pump Inhibitors,Omeprazole,Pantoprazole,
+fracture of the ankle,Orthopedic Intervention (Casting/ORIF),Analgesics,Acetaminophen,Ibuprofen,Oxycodone
+soft tissue sarcoma,Surgical Excision,"Radiation, Chemotherapy",Doxorubicin,Ifosfamide,Pazopanib
+bone disorder,Bisphosphonates,"Calcium, Vitamin D",Alendronate,Calcium Carbonate,Vitamin D3
+epilepsy,Anticonvulsants (Levetiracetam/Valproate/Lamotrigine),,Levetiracetam,Valproic Acid,Lamotrigine
+personality disorder,Dialectical Behavior Therapy (DBT),"Psychotherapy, Mood Stabilizers",Lithium,Lamotrigine,Aripiprazole
+shingles (herpes zoster),Antivirals (Valacyclovir),"Analgesics, Gabapentinoids",Valacyclovir,Acyclovir,Gabapentin
+tourette syndrome,Alpha-2 Agonists (Clonidine),"Antipsychotics, Behavioral Therapy",Clonidine,Guanfacine,Haloperidol
+avascular necrosis,Analgesics,"Core Decompression, Joint Replacement Surgery",Ibuprofen,Naproxen,Alendronate
+strep throat,Antibiotics (Penicillin/Amoxicillin),,Penicillin V,Amoxicillin,Azithromycin
+spinocerebellar ataxia,Supportive Care,Physical Therapy,Baclofen (for spasticity),Gabapentin,
+osteomyelitis,Prolonged IV Antibiotics,Surgical Debridement,Vancomycin,Ceftriaxone,Ciprofloxacin
+sjogren syndrome,Artificial Tears,"Saliva Substitutes, Cholinergics (Pilocarpine)",Polyethylene Glycol drops,Pilocarpine,Cevimeline
+adhesive capsulitis of the shoulder,Physical Therapy,"NSAIDs, Corticosteroid Injections",Ibuprofen,Naproxen,Methylprednisolone injection
+viral hepatitis,Antivirals (e.g. Entecavir for Hep B/Glecaprevir for Hep C),Supportive Care,Entecavir,Tenofovir,Glecaprevir/Pibrentasvir
+tonsillar hypertrophy,Observation,"Corticosteroids, Tonsillectomy",Prednisone,Fluticasone nasal,
+gastritis,Proton Pump Inhibitors,"H2 Blockers, Antacids",Omeprazole,Famotidine,Calcium Carbonate
+skin cancer,Surgical Excision,"Mohs Surgery, Topical Chemotherapy (Fluorouracil)",Fluorouracil cream,Imiquimod cream,Vismodegib (for basal cell)
+rheumatic fever,Antibiotics (Penicillin),"NSAIDs, Corticosteroids",Penicillin G Benzathine,Aspirin,Prednisone
+aphthous ulcer,Topical Corticosteroids,"Antimicrobial Mouthwashes, Analgesics",Triamcinolone dental paste,Chlorhexidine mouthwash,Benzocaine topical
+tonsillitis,Antibiotics (if bacterial),"Analgesics, Antipyretics",Amoxicillin,Acetaminophen,Ibuprofen
+intestinal cancer,Surgical Intervention,"Chemotherapy, Radiation",Fluorouracil,Oxaliplatin,Capecitabine
+rocky mountain spotted fever,Antibiotics (Doxycycline),,Doxycycline,Chloramphenicol,
+stomach cancer,Surgical Intervention (Gastrectomy),"Chemotherapy, Radiation",Fluorouracil,Cisplatin,Docetaxel
+developmental disability,Special Education,"Occupational Therapy, Speech Therapy",,,
+acute stress reaction,Crisis Intervention,"Short-term Anxiolytics, Psychotherapy",Lorazepam,Alprazolam,Clonazepam
+delirium,Treat Underlying Cause,"Antipsychotics (Haloperidol for agitation), Reorientation",Haloperidol,Quetiapine,Olanzapine
+callus,Keratolytics (Salicylic Acid),"Pumice Stone, Footwear Modification",Salicylic Acid patch,Urea cream,
+guillain barre syndrome,IVIG,"Plasmapheresis, Supportive Respiratory Care",Intravenous Immunoglobulin,Gabapentin (for pain),
+lumbago,NSAIDs,"Muscle Relaxants, Physical Therapy",Ibuprofen,Naproxen,Cyclobenzaprine
+deviated nasal septum,Decongestants,"Antihistamines, Surgical Intervention (Septoplasty)",Pseudoephedrine,Loratadine,Fluticasone nasal
+hemangioma,Observation,"Beta-blockers (Propranolol for infantile), Laser Therapy",Propranolol,Timolol topical,
+peripheral arterial disease,Antiplatelets (Cilostazol/Aspirin),"Statins, Supervised Exercise",Cilostazol,Aspirin,Atorvastatin
+chronic back pain,NSAIDs,"Physical Therapy, Antidepressants (Duloxetine)",Ibuprofen,Duloxetine,Cyclobenzaprine
+heart failure,ACE Inhibitors,"Beta-blockers, Diuretics, SGLT2 Inhibitors",Lisinopril,Metoprolol,Furosemide
+conjunctivitis,Ophthalmic Antibiotics (if bacterial),Antihistamine Drops (if allergic),Erythromycin ointment,Olopatadine drops,
+herniated disk,NSAIDs,"Physical Therapy, Epidural Corticosteroid Injections, Microdiscectomy",Ibuprofen,Naproxen,Methylprednisolone injection
+rhabdomyolysis,Aggressive IV Fluids,Monitor Electrolytes,Normal Saline,Sodium Bicarbonate,
+breast infection (mastitis),Antibiotics (Dicloxacillin/Cephalexin),"Warm Compresses, Continued Breastfeeding",Dicloxacillin,Cephalexin,Ibuprofen
+abdominal aortic aneurysm,Observation,Surgical Repair (Endovascular Aneurysm Repair),Lisinopril (blood pressure control),Amlodipine,
+pulmonary embolism,Anticoagulants (Heparin/DOACs),Thrombolytics,Heparin,Apixaban,Alteplase (tPA)
+conduct disorder,Behavioral Therapy,Parent Management Training,Methylphenidate (if ADHD comorbid),Risperidone (for aggression),
+mastectomy,Surgical Intervention,Post-op Analgesia,Acetaminophen,Ibuprofen,Oxycodone
+epididymitis,Antibiotics (Ceftriaxone + Doxycycline/Levofloxacin),Scrotal Elevation,Ceftriaxone,Doxycycline,Levofloxacin
+premature rupture of amniotic membrane,Hospital Admission,"Antibiotics, Corticosteroids (if preterm), Delivery",Ampicillin,Azithromycin,Betamethasone
+molluscum contagiosum,Observation,"Cryotherapy, Topical Cantharidin",Cantharidin,Imiquimod cream,Podofilox
+necrotizing fasciitis,Broad-Spectrum IV Antibiotics,Urgent Surgical Debridement,Vancomycin,Piperacillin-Tazobactam,Clindamycin
+benign vaginal discharge (leukorrhea),Observation,Reassurance,,,
+bladder obstruction,Catheterization,"Alpha-blockers, Surgical Intervention (TURP for BPH)",Tamsulosin,Alfuzosin,Finasteride
+melanoma,Surgical Excision,"Immunotherapy, Targeted Therapy",Pembrolizumab,Nivolumab,Dabrafenib
+cervical disorder,Cryotherapy,"LEEP Procedure, Observation",Ibuprofen (post-procedure),,
+laryngitis,Vocal Rest,"Hydration, Humidification",Acetaminophen,Ibuprofen,
+dyshidrosis,High-Potency Topical Corticosteroids,Emollients,Clobetasol ointment,Betamethasone cream,
+poisoning due to opioids,Opioid Antagonist (Naloxone),Airway Support,Naloxone,,
+diaper rash,Barrier Creams (Zinc Oxide),"Frequent Diaper Changes, Topical Antifungals (if yeast)",Zinc Oxide paste,Petrolatum ointment,Clotrimazole cream
+lichen planus,Topical Corticosteroids,"Oral Antihistamines, Immunosuppressants",Clobetasol ointment,Triamcinolone cream,Cetirizine
+gastroduodenal ulcer,Proton Pump Inhibitors,H. pylori Eradication Therapy (Antibiotics + PPI),Omeprazole,Amoxicillin,Clarithromycin
+inguinal hernia,Surgical Intervention (Herniorrhaphy/Hernioplasty),,Ibuprofen,Acetaminophen,
+eczema,Topical Corticosteroids,"Emollients, Antihistamines",Hydrocortisone cream,Triamcinolone cream,Diphenhydramine
+asperger syndrome,Social Skills Training,"Cognitive Behavioral Therapy, Speech Therapy",Sertraline (for comorbid anxiety),Melatonin (for sleep),
+mucositis,Oral Hygiene,"Viscous Lidocaine (Magic Mouthwash), Analgesics",Lidocaine viscous,Chlorhexidine mouthwash,Benzocaine topical
+paronychia,Warm Soaks,"Oral or Topical Antibiotics, Incision and Drainage",Cephalexin,Mupirocin ointment,Clindamycin
+open wound of the jaw,Antibiotics,"Suture Repair, Tetanus Prophylaxis",Cephalexin,Acetaminophen,Tetanus Toxoid
+white blood cell disease,Depends on exact type (e.g. Chemotherapy for leukemia/Growth Factors for neutropenia),,Filgrastim,Pegfilgrastim,Imatinib
+kaposi sarcoma,Antiretroviral Therapy (ART for HIV+),"Radiation, Chemotherapy",Bictegravir/Emtricitabine/Tenofovir,Doxorubicin,Paclitaxel
+spondylolisthesis,Physical Therapy,"NSAIDs, Spinal Fusion Surgery",Ibuprofen,Naproxen,Acetaminophen
+pseudotumor cerebri,Carbonic Anhydrase Inhibitors (Acetazolamide),Weight Loss,Acetazolamide,Topiramate,Furosemide
+conjunctivitis due to virus,Supportive Care,"Cold Compresses, Artificial Tears",Polyethylene Glycol drops,Ketotifen drops (for itching),
+open wound of the nose,Antibiotics,"Suture Repair, Tetanus Prophylaxis",Cephalexin,Acetaminophen,Tetanus Toxoid
