@@ -5,21 +5,32 @@ const authMiddleware = (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
-      return res.status(401).json({ msg: "No token" });
+      return res.status(401).json({
+        msg: "No token provided"
+      });
     }
 
     const token = authHeader.startsWith("Bearer ")
       ? authHeader.split(" ")[1]
       : authHeader;
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(
+      token,
+      process.env.JWT_SECRET
+    );
 
-    req.user = { id: decoded.id };   
+    req.user = {
+      id: decoded.id
+    };
 
     next();
 
   } catch (error) {
-    res.status(401).json({ msg: "Invalid token" });
+    console.log(error);
+
+    return res.status(401).json({
+      msg: "Invalid token"
+    });
   }
 };
 

@@ -1,12 +1,43 @@
 import axios from "./axios";
 
-export const registerUser = (data) =>
-  axios.post("/auth/register", data);
+/* =========================
+   REGISTER
+========================= */
 
-export const loginUser = (data) =>
-  axios.post("/auth/login", data);
+export const registerUser = async (data) => {
+  const res = await axios.post(
+    "/auth/register",
+    data
+  );
+
+  return res;
+};
 
 
-export const getUserProfile = () => {
-  return axios.get("/auth/me").then(res => res.data);
+
+/* =========================
+   LOGIN
+========================= */
+
+export const loginUser = async (data) => {
+  const res = await axios.post(
+    "/auth/login",
+    data
+  );
+
+  return res;
+};
+
+
+
+/* =========================
+   GET USER PROFILE
+========================= */
+
+export const getUserProfile = async () => {
+  const res = await axios.get(
+    "/auth/me"
+  );
+
+  return res.data;
 };

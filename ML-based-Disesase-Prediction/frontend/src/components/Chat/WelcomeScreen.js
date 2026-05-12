@@ -1,60 +1,95 @@
-const WelcomeScreen = ({ setSymptoms, sidebarOpen }) => {
+const WelcomeScreen = () => {
+  const suggestions = [
+    "I have headache and nausea",
+    "My throat is sore and I have fever",
+    "I have stomach pain after eating",
+    "I am having seasonal allergies"
+  ];
+
   return (
     <div
-      className="d-flex justify-content-center align-items-center"
       style={{
         height: "100%",
-        marginLeft: sidebarOpen ? "260px" : "0px",
-        transition: "all 0.3s ease"
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
       }}
     >
-      <div className="text-center" style={{ maxWidth: "700px" }}>
-        
+      <div
+        style={{
+          textAlign: "center",
+          maxWidth: "750px"
+        }}
+      >
+        {/* LOGO */}
         <div
-          className="mx-auto mb-3"
           style={{
-            width: 60,
-            height: 60,
-            background: "#e6f4f1",
-            borderRadius: "15px",
+            width: "70px",
+            height: "70px",
+            background: "#e8f7f4",
+            borderRadius: "20px",
+            margin: "0 auto 20px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            fontSize: "30px"
           }}
         >
           💚
         </div>
 
-        <h3 className="fw-bold">How can I help you today?</h3>
+        {/* TITLE */}
+        <h2
+          style={{
+            fontWeight: "700",
+            color: "#111827",
+            marginBottom: "10px"
+          }}
+        >
+          How can I help you today?
+        </h2>
 
-        <p style={{ color: "#6b7280" }}>
-          Describe your symptoms and I'll suggest possible conditions,
-          medicines, and alternatives.
+        {/* SUBTITLE */}
+        <p
+          style={{
+            color: "#6b7280",
+            fontSize: "15px",
+            lineHeight: "1.7",
+            marginBottom: "30px"
+          }}
+        >
+          Describe your symptoms and get AI-powered
+          health guidance, medicine suggestions,
+          and wellness advice.
         </p>
 
-        <div className="d-flex flex-wrap justify-content-center gap-2 mt-3">
-          {[
-            "I have a headache and nausea",
-            "My throat is sore and I have a fever",
-            "I'm experiencing back pain",
-            "I have seasonal allergies"
-          ].map((text, i) => (
+        {/* SUGGESTIONS */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "12px"
+          }}
+        >
+          {suggestions.map((item, index) => (
             <div
-              key={i}
+              key={index}
               style={{
-                padding: "10px 15px",
-                border: "1px solid #ddd",
-                borderRadius: "10px",
+                padding: "12px 18px",
+                border: "1px solid #e5e7eb",
+                borderRadius: "12px",
+                background: "#fff",
                 cursor: "pointer",
-                background: "#fff"
+                fontSize: "14px",
+                color: "#111827",
+                transition: "0.2s"
               }}
-              onClick={() => setSymptoms(text)}
             >
-              "{text}"
+              {item}
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

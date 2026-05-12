@@ -1,13 +1,25 @@
 import express from "express";
-import { getUserChats, sendMessage, getChatHistory } from "../controllers/chat.controller.js";
 import authMiddleware from "../middleware/auth.middleware.js";
+
+import {
+  sendMessage,
+  getChatHistory
+} from "../controllers/chat.controller.js";
 
 const router = express.Router();
 
-// Get chat history
-router.get("/history", authMiddleware, getChatHistory);
+/* SEND MESSAGE */
+router.post(
+  "/send",
+  authMiddleware,
+  sendMessage
+);
 
-// Send a message to the chatbot
-router.post("/send", authMiddleware, sendMessage);
+/* GET HISTORY */
+router.get(
+  "/history",
+  authMiddleware,
+  getChatHistory
+);
 
 export default router;
