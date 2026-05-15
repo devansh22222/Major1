@@ -1,6 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
 import WelcomeScreen from "./WelcomeScreen";
+
 import { sendMessageAPI } from "../../api/chat.api";
+
 
 const ChatArea = ({
   sidebarOpen,
@@ -9,37 +12,36 @@ const ChatArea = ({
 }) => {
 
   const [messages, setMessages] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [inputValue, setInputValue] = useState("");
 
-  const messagesEndRef = useRef(null);
+  const [input, setInput] = useState("");
+
+  const [loading, setLoading] = useState(false);
+
+  const bottomRef = useRef(null);
+
+
 
   /* =========================
-     SCROLL
+     AUTO SCROLL
   ========================= */
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({
+  useEffect(() => {
+
+    bottomRef.current?.scrollIntoView({
       behavior: "smooth"
     });
-  };
 
-  useEffect(() => {
-    scrollToBottom();
   }, [messages]);
 
 
 
   /* =========================
-     LOAD SELECTED HISTORY CHAT
+     LOAD HISTORY CHAT
   ========================= */
 
   useEffect(() => {
 
-    if (!selectedChat) {
-      setMessages([]);
-      return;
-    }
+    if (!selectedChat) return;
 
     setMessages([
       {
@@ -60,12 +62,11 @@ const ChatArea = ({
      SEND MESSAGE
   ========================= */
 
-  const handleSendMessage = async (e) => {
-    e.preventDefault();
+  const handleSend = async () => {
 
-    if (!inputValue.trim()) return;
+    if (!input.trim()) return;
 
-    const userMessage = inputValue;
+    const userMessage = input;
 
     setMessages((prev) => [
       ...prev,
@@ -75,7 +76,8 @@ const ChatArea = ({
       }
     ]);
 
-    setInputValue("");
+    setInput("");
+
     setLoading(true);
 
     try {
@@ -94,9 +96,9 @@ const ChatArea = ({
 
       refreshHistory();
 
-    } catch (err) {
+    } catch (error) {
 
-      console.log(err);
+      console.log(error);
 
       setMessages((prev) => [
         ...prev,
@@ -117,8 +119,7 @@ const ChatArea = ({
       style={{
         height: "100%",
         display: "flex",
-        flexDirection: "column",
-        background: "#f5f7fb"
+        flexDirection: "column"
       }}
     >
 
@@ -132,86 +133,107 @@ const ChatArea = ({
           paddingBottom: "120px"
         }}
       >
+
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "950px",
             margin: "0 auto"
           }}
         >
 
           {messages.length === 0 ? (
+
             <WelcomeScreen />
+
           ) : (
-            <>
-              {messages.map((msg, index) => (
+
+            messages.map((msg, index) => (
+
+              <div
+                key={index}
+                style={{
+                  display: "flex",
+
+                  justifyContent:
+                    msg.type === "user"
+                      ? "flex-end"
+                      : "flex-start",
+
+                  marginBottom: "20px"
+                }}
+              >
 
                 <div
-                  key={index}
                   style={{
-                    display: "flex",
-                    justifyContent:
+                    maxWidth: "75%",
+
+                    padding: "14px 18px",
+
+                    borderRadius: "18px",
+
+                    whiteSpace: "pre-wrap",
+
+                    lineHeight: "1.7",
+
+                    background:
                       msg.type === "user"
-                        ? "flex-end"
-                        : "flex-start",
-                    marginBottom: "20px"
+                        ? "#2a9d8f"
+                        : "#fff",
+
+                    color:
+                      msg.type === "user"
+                        ? "#fff"
+                        : "#111827",
+
+                    border:
+                      msg.type === "bot"
+                        ? "1px solid #e5e7eb"
+                        : "none",
+
+                    boxShadow:
+                      "0 2px 10px rgba(0,0,0,0.05)"
                   }}
                 >
-
-                  <div
-                    style={{
-                      maxWidth: "75%",
-                      padding: "14px 18px",
-                      borderRadius: "18px",
-
-                      background:
-                        msg.type === "user"
-                          ? "#2a9d8f"
-                          : "#ffffff",
-
-                      color:
-                        msg.type === "user"
-                          ? "#fff"
-                          : "#111827",
-
-                      border:
-                        msg.type === "bot"
-                          ? "1px solid #e5e7eb"
-                          : "none",
-
-                      whiteSpace: "pre-wrap",
-                      lineHeight: "1.6",
-
-                      boxShadow:
-                        "0 2px 10px rgba(0,0,0,0.05)"
-                    }}
-                  >
-                    {msg.text}
-                  </div>
-
+                  {msg.text}
                 </div>
-              ))}
 
-              {loading && (
-                <div className="mb-3">
-                  <div
-                    style={{
-                      background: "#fff",
-                      border: "1px solid #e5e7eb",
-                      padding: "12px 16px",
-                      borderRadius: "15px",
-                      width: "fit-content"
-                    }}
-                  >
-                    Thinking...
-                  </div>
-                </div>
-              )}
-
-              <div ref={messagesEndRef}></div>
-            </>
+              </div>
+            ))
           )}
 
+
+          {loading && (
+
+            <div
+              style={{
+                marginBottom: "20px"
+              }}
+            >
+
+              <div
+                style={{
+                  background: "#fff",
+
+                  border:
+                    "1px solid #e5e7eb",
+
+                  width: "fit-content",
+
+                  padding: "12px 18px",
+
+                  borderRadius: "16px"
+                }}
+              >
+                Thinking...
+              </div>
+
+            </div>
+          )}
+
+          <div ref={bottomRef}></div>
+
         </div>
+
       </div>
 
 
@@ -221,6 +243,7 @@ const ChatArea = ({
       <div
         style={{
           position: "fixed",
+
           bottom: 0,
 
           left: sidebarOpen
@@ -232,55 +255,81 @@ const ChatArea = ({
             : "100%",
 
           background: "#fff",
-          borderTop: "1px solid #e5e7eb",
+
+          borderTop:
+            "1px solid #e5e7eb",
+
           padding: "15px",
+
           transition: "all 0.3s ease"
         }}
       >
 
-        <form
-          onSubmit={handleSendMessage}
+        <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "950px",
+
             margin: "0 auto",
+
             display: "flex",
+
             gap: "10px"
           }}
         >
 
           <input
-            type="text"
-            value={inputValue}
+            value={input}
+
             onChange={(e) =>
-              setInputValue(e.target.value)
+              setInput(e.target.value)
             }
+
+            onKeyDown={(e) =>
+              e.key === "Enter" &&
+              handleSend()
+            }
+
             placeholder="Describe your symptoms..."
+
             style={{
               flex: 1,
-              border: "1px solid #ddd",
+
+              border:
+                "1px solid #ddd",
+
               borderRadius: "30px",
+
               padding: "14px 18px",
+
               outline: "none",
+
               background: "#fafafa"
             }}
           />
 
           <button
-            type="submit"
+            onClick={handleSend}
+
             style={{
               border: "none",
+
               background: "#2a9d8f",
+
               color: "#fff",
+
+              width: "52px",
+
+              height: "52px",
+
               borderRadius: "50%",
-              width: "50px",
-              height: "50px",
+
               fontSize: "18px"
             }}
           >
             ➤
           </button>
 
-        </form>
+        </div>
 
       </div>
 
