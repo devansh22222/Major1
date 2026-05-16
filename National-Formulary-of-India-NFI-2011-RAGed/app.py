@@ -18,8 +18,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-print(os.getenv("OPENAI_API_KEY"))  # Debug: check if API key is loaded
-
 # ---------------------------------------------------------------------------
 # Page configuration
 # ---------------------------------------------------------------------------
@@ -76,7 +74,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption("Vector store: `chroma_db/`")
-    st.caption("Embedding: `all-MiniLM-L6-v2`")
+    st.caption("Embedding: `all-mpnet-base-v2`")
     st.caption("LLM: `gpt-4o-mini` (configurable via OPENAI_MODEL)")
 
 # ---------------------------------------------------------------------------
@@ -124,7 +122,8 @@ if submitted and question.strip():
                 import rag as _rag
 
                 # Invalidate caches so updated TOP_K takes effect immediately.
-                _rag._get_retriever.cache_clear()
+                # `_get_retriever` was renamed to `_get_vectorstore` in rag.py.
+                _rag._get_vectorstore.cache_clear()
                 _rag._get_llm.cache_clear()
 
                 result = _rag.answer(question.strip())

@@ -31,12 +31,12 @@ CHROMA_DIR = os.getenv("CHROMA_DIR", "chroma_db")
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "nfi_2011")
 
 # Embedding model — runs entirely locally, no API key needed.
-# "all-MiniLM-L6-v2" is fast and accurate for medical/drug text retrieval.
-EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+# all-mpnet-base-v2 is slower than MiniLM but usually gives better retrieval quality.
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
 
 # Chunk parameters
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "100"))
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1200"))
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "150"))
 
 
 def extract_pages(pdf_path: str) -> list[dict]:
@@ -97,7 +97,10 @@ def ingest(
     print(f"[INFO] Created {len(texts)} text chunks.")
 
     print(f"[INFO] Loading embedding model: {EMBEDDING_MODEL}")
-    embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    embeddings = HuggingFaceEmbeddings(
+        model_name=EMBEDDING_MODEL,
+        encode_kwargs={"normalize_embeddings": True},
+    )
 
     print(f"[INFO] Building ChromaDB collection '{collection_name}' at '{chroma_dir}' …")
     # Batch in groups of 500 to avoid memory spikes on large PDFs.
