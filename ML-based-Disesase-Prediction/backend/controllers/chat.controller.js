@@ -1,122 +1,3 @@
-// import Chat from "../models/Chat.js";
-// import { GoogleGenerativeAI } from "@google/generative-ai";
-
-// const genAI = new GoogleGenerativeAI(
-//   process.env.GOOGLE_API_KEY
-// );
-
-// const SYSTEM_PROMPT = `
-// You are MediRx AI Health Assistant.
-
-// Rules:
-// - Be friendly and supportive
-// - Explain health information simply
-// - Suggest common medicines only
-// - Never claim certainty
-// - Never replace real doctors
-// - Keep answers concise and readable
-// - Use simple formatting
-// `;
-
-
-
-// /* =========================
-//    SEND MESSAGE
-// ========================= */
-
-// export const sendMessage = async (req, res) => {
-//   try {
-//     const { message } = req.body;
-
-//     if (!message?.trim()) {
-//       return res.status(400).json({
-//         error: "Message required"
-//       });
-//     }
-
-//     const model = genAI.getGenerativeModel({
-//       model: "gemini-2.5-flash"
-//     });
-
-//     const prompt = `
-//       ${SYSTEM_PROMPT}
-
-//       User Symptoms/Message:
-//       ${message}
-
-//       Respond in this format:
-
-//       Possible Condition:
-//       ...
-
-//       Suggested Medicines:
-//       - ...
-//       - ...
-
-//       Advice:
-//       ...
-//       `;
-
-//     const result = await model.generateContent(prompt);
-
-//     const reply = result.response.text();
-
-//     /* SAVE CHAT */
-//     const newChat = await Chat.create({
-//       user: req.user.id,
-//       symptoms: message,
-//       response: {
-//         answer: reply
-//       }
-//     });
-
-//     res.json({
-//       success: true,
-//       reply,
-//       chatId: newChat._id
-//     });
-
-//   } catch (error) {
-//     console.log(error);
-
-//     res.status(500).json({
-//       error: "Failed to generate response"
-//     });
-//   }
-// };
-
-
-
-// /* =========================
-//    GET CHAT HISTORY
-// ========================= */
-
-// export const getChatHistory = async (req, res) => {
-//   try {
-//     const chats = await Chat.find({
-//       user: req.user.id
-//     })
-//       .sort({ createdAt: -1 });
-
-//     const formattedChats = chats.map((chat) => ({
-//       id: chat._id,
-//       message: chat.symptoms,
-//       reply: chat.response?.answer || "",
-//       createdAt: chat.createdAt
-//     }));
-
-//     res.json(formattedChats);
-
-//   } catch (error) {
-//     console.log(error);
-
-//     res.status(500).json({
-//       error: "Failed to load history"
-//     });
-//   }
-// };
-
-
 import axios from "axios";
 import Chat from "../models/Chat.js";
 
@@ -133,9 +14,14 @@ export const sendMessage = async (req, res) => {
 
   try {
 
-    const { message } = req.body;
+    const {
+      message,
+      chatId
+    } = req.body;
+
 
     if (!message?.trim()) {
+
       return res.status(400).json({
         error: "Message required"
       });
@@ -143,7 +29,7 @@ export const sendMessage = async (req, res) => {
 
 
     /* =========================
-       STEP 1 → ML PREDICTION
+       ML PREDICTION
     ========================= */
 
     const mlResponse = await axios.post(
@@ -156,10 +42,6 @@ export const sendMessage = async (req, res) => {
     const predictionData = mlResponse.data;
 
 
-    /* =========================
-       EXTRACT DISEASES
-    ========================= */
-
     const diseases =
       predictionData?.results?.map(
         (item) => item.disease
@@ -167,37 +49,44 @@ export const sendMessage = async (req, res) => {
 
 
     /* =========================
-       BUILD RAG QUERY
+       RAG PROMPT
     ========================= */
 
 const ragPrompt = `
 You are MediRx AI Assistant.
 
-IMPORTANT:
-- Reply in SAME language as user.
-- If user writes in Gujarati, reply in Gujarati.
-- If user writes in Hindi, reply in Hindi.
-- If user writes in English, reply in English.
-- Use simple language.
-- Use ONLY NFI grounded medical information.
+STRICT RULES:
+- Use ONLY information retrieved from NFI documents.
+- Do NOT use general medical knowledge.
+- Do NOT invent medicines.
+- If information is unavailable in NFI, clearly say so.
 
-User symptoms:
+LANGUAGE RULE:
+- Reply in SAME language as user.
+- Gujarati → Gujarati
+- Hindi → Hindi
+- English → English
+
+GREETING RULE:
+- If user only says hello/hi/hey,
+  reply naturally without medical advice.
+
+For symptom queries provide STRICTLY:
+
+1. Possible Conditions
+2. Medicines from NFI
+3. Dosage Information
+4. Safety Advice
+5. Doctor Warning
+
+User Message:
 ${message}
 
-Predicted diseases:
+Predicted Diseases:
 ${diseases.join(", ")}
-
-Provide:
-- possible condition
-- medicines from NFI
-- dosage/safety info
-- simple advice
-- warning if needed
 `;
-
-
     /* =========================
-       STEP 2 → NFI RAG
+       RAG RESPONSE
     ========================= */
 
     const ragResponse = await axios.post(
@@ -213,20 +102,53 @@ Provide:
 
 
     /* =========================
-       SAVE CHAT
+       FIND OR CREATE CHAT
     ========================= */
 
-    const newChat = await Chat.create({
+    let chat;
 
-      user: req.user.id,
 
-      symptoms: message,
+    if (chatId) {
 
-      response: {
-        answer: finalReply,
-        prediction: predictionData
-      }
+      chat = await Chat.findById(chatId);
+    }
+
+
+    if (!chat) {
+
+      chat = await Chat.create({
+
+        user: req.user.id,
+
+        title:
+          message.substring(0, 40),
+
+        messages: []
+      });
+    }
+
+
+    /* =========================
+       PUSH USER MESSAGE
+    ========================= */
+
+    chat.messages.push({
+      role: "user",
+      content: message
     });
+
+
+    /* =========================
+       PUSH AI MESSAGE
+    ========================= */
+
+    chat.messages.push({
+      role: "assistant",
+      content: finalReply
+    });
+
+
+    await chat.save();
 
 
     /* =========================
@@ -239,14 +161,17 @@ Provide:
 
       reply: finalReply,
 
-      prediction: predictionData,
+      chatId: chat._id,
 
-      chatId: newChat._id
+      messages: chat.messages
     });
 
   } catch (error) {
 
-    console.log( "ERROR in sendMessage:", error?.response?.data || error.message);
+    console.log(
+      "ERROR in sendMessage:",
+      error?.response?.data || error.message
+    );
 
     res.status(500).json({
       error: "Failed to generate response"
@@ -260,13 +185,16 @@ Provide:
    GET CHAT HISTORY
 ========================= */
 
-export const getChatHistory = async (req, res) => {
+export const getChatHistory = async (
+  req,
+  res
+) => {
 
   try {
 
     const chats = await Chat.find({
       user: req.user.id
-    }).sort({ createdAt: -1 });
+    }).sort({ updatedAt: -1 });
 
 
     const formattedChats = chats.map(
@@ -274,17 +202,14 @@ export const getChatHistory = async (req, res) => {
 
         id: chat._id,
 
-        message: chat.symptoms,
+        title: chat.title,
 
-        reply:
-          chat.response?.answer || "",
+        messages: chat.messages,
 
-        prediction:
-          chat.response?.prediction || {},
-
-        createdAt: chat.createdAt
+        updatedAt: chat.updatedAt
       })
     );
+
 
     res.json(formattedChats);
 

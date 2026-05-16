@@ -1,4 +1,52 @@
+// import mongoose from "mongoose";
+
+// const chatSchema = new mongoose.Schema(
+//   {
+//     user: {
+//       type: mongoose.Schema.Types.ObjectId,
+//       ref: "User",
+//       required: true
+//     },
+
+//     symptoms: {
+//       type: String,
+//       required: true
+//     },
+
+//     response: {
+//       answer: {
+//         type: String,
+//         required: true
+//       }
+//     }
+//   },
+//   {
+//     timestamps: true
+//   }
+// );
+
+// export default mongoose.model("Chat", chatSchema);
+
+
 import mongoose from "mongoose";
+
+const messageSchema = new mongoose.Schema(
+  {
+    role: {
+      type: String,
+      enum: ["user", "assistant"],
+      required: true
+    },
+
+    content: {
+      type: String,
+      required: true
+    }
+  },
+  {
+    _id: false
+  }
+);
 
 const chatSchema = new mongoose.Schema(
   {
@@ -8,17 +56,12 @@ const chatSchema = new mongoose.Schema(
       required: true
     },
 
-    symptoms: {
+    title: {
       type: String,
-      required: true
+      default: "New Chat"
     },
 
-    response: {
-      answer: {
-        type: String,
-        required: true
-      }
-    }
+    messages: [messageSchema]
   },
   {
     timestamps: true

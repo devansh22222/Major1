@@ -8,7 +8,8 @@ import { sendMessageAPI } from "../../api/chat.api";
 const ChatArea = ({
   sidebarOpen,
   refreshHistory,
-  selectedChat
+  selectedChat,
+  setSelectedChat
 }) => {
 
   const [messages, setMessages] = useState([]);
@@ -16,6 +17,8 @@ const ChatArea = ({
   const [input, setInput] = useState("");
 
   const [loading, setLoading] = useState(false);
+
+  const [chatId, setChatId] = useState(null);
 
   const bottomRef = useRef(null);
 
@@ -36,23 +39,35 @@ const ChatArea = ({
 
 
   /* =========================
-     LOAD HISTORY CHAT
+     LOAD SELECTED CHAT
   ========================= */
 
   useEffect(() => {
 
-    if (!selectedChat) return;
+    if (!selectedChat) {
 
-    setMessages([
-      {
-        type: "user",
-        text: selectedChat.message
-      },
-      {
-        type: "bot",
-        text: selectedChat.reply
-      }
-    ]);
+      setMessages([]);
+
+      setChatId(null);
+
+      return;
+    }
+
+    setChatId(selectedChat.id);
+
+    const formattedMessages =
+      selectedChat.messages.map((msg) => ({
+
+        type:
+          msg.role === "user"
+            ? "user"
+            : "bot",
+
+        text: msg.content
+      }));
+
+
+    setMessages(formattedMessages);
 
   }, [selectedChat]);
 
@@ -82,9 +97,12 @@ const ChatArea = ({
 
     try {
 
-      const res = await sendMessageAPI(
-        userMessage
-      );
+      const res =
+        await sendMessageAPI({
+          message: userMessage,
+          chatId
+        });
+
 
       setMessages((prev) => [
         ...prev,
@@ -93,6 +111,20 @@ const ChatArea = ({
           text: res.reply
         }
       ]);
+
+
+      if (!chatId) {
+
+        setChatId(res.chatId);
+
+        setSelectedChat({
+          id: res.chatId,
+          title:
+            userMessage.substring(0, 40),
+          messages: res.messages
+        });
+      }
+
 
       refreshHistory();
 
