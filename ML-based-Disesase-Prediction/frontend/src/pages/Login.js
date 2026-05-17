@@ -1,38 +1,66 @@
 import { useState } from "react";
-import { loginUser } from "../api/auth.api";
+
+import { loginUser }
+from "../api/auth.api";
 
 const Login = () => {
-  const [form, setForm] = useState({
-    email: "",
-    password: ""
-  });
 
-  const [loading, setLoading] = useState(false);
+  const [form, setForm] =
+    useState({
+      email: "",
+      password: "",
+      role: "patient"
+    });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const [loading, setLoading] =
+    useState(false);
 
-    try {
-      setLoading(true);
 
-      const res = await loginUser(form);
+  const handleSubmit =
+    async (e) => {
 
-      localStorage.setItem(
-        "token",
-        res.data.token
-      );
+      e.preventDefault();
 
-      window.location.href = "/";
+      try {
 
-    } catch (err) {
-      alert(
-        err.response?.data?.msg ||
-        "Login failed"
-      );
-    }
+        setLoading(true);
 
-    setLoading(false);
-  };
+        const res =
+          await loginUser(form);
+
+        localStorage.setItem(
+          "token",
+          res.data.token
+        );
+
+        localStorage.setItem(
+          "role",
+          res.data.role
+        );
+
+        /* REDIRECT */
+
+        if (
+          res.data.role === "doctor"
+        ) {
+          window.location.href =
+            "/doctor";
+        } else {
+          window.location.href =
+            "/";
+        }
+
+      } catch (err) {
+
+        alert(
+          err.response?.data?.msg ||
+          "Login failed"
+        );
+      }
+
+      setLoading(false);
+    };
+
 
   return (
     <div
@@ -42,6 +70,7 @@ const Login = () => {
         background: "#f5f7fb"
       }}
     >
+
       <form
         onSubmit={handleSubmit}
         style={{
@@ -49,11 +78,18 @@ const Login = () => {
           background: "#fff",
           borderRadius: "16px",
           padding: "35px",
-          border: "1px solid #e5e7eb",
-          boxShadow: "0 5px 20px rgba(0,0,0,0.05)"
+          border:
+            "1px solid #e5e7eb",
+
+          boxShadow:
+            "0 5px 20px rgba(0,0,0,0.05)"
         }}
       >
+
+        {/* HEADER */}
+
         <div className="text-center mb-4">
+
           <div
             style={{
               width: "65px",
@@ -63,7 +99,9 @@ const Login = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              margin: "0 auto 15px",
+              margin:
+                "0 auto 15px",
+
               fontSize: "28px"
             }}
           >
@@ -85,48 +123,102 @@ const Login = () => {
               fontSize: "14px"
             }}
           >
-            Login to continue using MediRx
+            Login to continue
           </p>
+
         </div>
+
+
+        {/* ROLE */}
+
+        <select
+          className="form-control mb-3"
+
+          value={form.role}
+
+          onChange={(e) =>
+            setForm({
+              ...form,
+              role: e.target.value
+            })
+          }
+
+          style={{
+            height: "50px",
+            borderRadius: "12px"
+          }}
+        >
+          <option value="patient">
+            Patient
+          </option>
+
+          <option value="doctor">
+            Doctor
+          </option>
+        </select>
+
+
+        {/* EMAIL */}
 
         <input
           type="email"
+
           placeholder="Email"
+
           className="form-control mb-3"
+
           value={form.email}
+
           onChange={(e) =>
             setForm({
               ...form,
-              email: e.target.value
+              email:
+                e.target.value
             })
           }
+
           style={{
             height: "50px",
             borderRadius: "12px"
           }}
         />
+
+
+        {/* PASSWORD */}
 
         <input
           type="password"
+
           placeholder="Password"
+
           className="form-control mb-3"
+
           value={form.password}
+
           onChange={(e) =>
             setForm({
               ...form,
-              password: e.target.value
+              password:
+                e.target.value
             })
           }
+
           style={{
             height: "50px",
             borderRadius: "12px"
           }}
         />
 
+
+        {/* BUTTON */}
+
         <button
           type="submit"
+
           disabled={loading}
+
           className="btn w-100"
+
           style={{
             height: "50px",
             background: "#2a9d8f",
@@ -135,21 +227,39 @@ const Login = () => {
             fontWeight: "600"
           }}
         >
-          {loading ? "Please wait..." : "Login"}
+          {
+            loading
+              ? "Please wait..."
+              : "Login"
+          }
         </button>
 
-        <div
-          className="text-center mt-3"
-          style={{
-            fontSize: "14px"
-          }}
-        >
-          Don't have an account?{" "}
-          <a href="/register">
-            Register
-          </a>
-        </div>
+
+        {/* REGISTER */}
+
+        {
+          form.role ===
+          "patient" && (
+
+            <div
+              className="text-center mt-3"
+
+              style={{
+                fontSize: "14px"
+              }}
+            >
+              Don't have an account?{" "}
+
+              <a href="/register">
+                Register
+              </a>
+
+            </div>
+          )
+        }
+
       </form>
+
     </div>
   );
 };

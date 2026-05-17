@@ -1,8 +1,15 @@
 import jwt from "jsonwebtoken";
 
-const authMiddleware = (req, res, next) => {
+const authMiddleware = (
+  req,
+  res,
+  next
+) => {
+
   try {
-    const authHeader = req.headers.authorization;
+
+    const authHeader =
+      req.headers.authorization;
 
     if (!authHeader) {
       return res.status(401).json({
@@ -10,9 +17,10 @@ const authMiddleware = (req, res, next) => {
       });
     }
 
-    const token = authHeader.startsWith("Bearer ")
-      ? authHeader.split(" ")[1]
-      : authHeader;
+    const token =
+      authHeader.startsWith("Bearer ")
+        ? authHeader.split(" ")[1]
+        : authHeader;
 
     const decoded = jwt.verify(
       token,
@@ -20,12 +28,14 @@ const authMiddleware = (req, res, next) => {
     );
 
     req.user = {
-      id: decoded.id
+      id: decoded.id,
+      role: decoded.role
     };
 
     next();
 
   } catch (error) {
+
     console.log(error);
 
     return res.status(401).json({

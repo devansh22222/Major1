@@ -41,6 +41,24 @@ const messageSchema = new mongoose.Schema(
     content: {
       type: String,
       required: true
+    },
+
+    reviewStatus: {
+      type: String,
+
+      enum: [
+        "pending",
+        "approved",
+        "edited",
+        "rejected"
+      ],
+
+      default: "pending"
+    },
+
+    doctorNotes: {
+      type: String,
+      default: ""
     }
   },
   {

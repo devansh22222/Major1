@@ -6,6 +6,7 @@ import connectDB from "./config/mongoDB.js";
 
 import authRoutes from "./routes/auth.routes.js";
 import chatRoutes from "./routes/chat.routes.js";
+import doctorRoutes from "./routes/doctor.routes.js";
 
 dotenv.config();
 
@@ -32,6 +33,10 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 app.use("/api/chat", chatRoutes);
+
+app.use("/api/doctor", doctorRoutes);
+
+
 
 /* =========================
    TEST ROUTE

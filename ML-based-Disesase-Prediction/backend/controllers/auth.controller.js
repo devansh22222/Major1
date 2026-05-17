@@ -6,9 +6,9 @@ import jwt from "jsonwebtoken";
    GENERATE TOKEN
 ========================= */
 
-const generateToken = (id) => {
+const generateToken = (id, role) => {
   return jwt.sign(
-    { id },
+    { id, role },
     process.env.JWT_SECRET,
     {
       expiresIn: "7d"
@@ -17,20 +17,19 @@ const generateToken = (id) => {
 };
 
 
-
 /* =========================
    REGISTER
 ========================= */
 
 export const register = async (req, res) => {
   try {
+
     const {
       name,
       email,
       password
     } = req.body;
 
-    /* CHECK USER */
     const userExists = await User.findOne({
       email
     });
@@ -41,25 +40,28 @@ export const register = async (req, res) => {
       });
     }
 
-    /* HASH PASSWORD */
     const hashedPassword =
       await bcrypt.hash(password, 10);
 
-    /* CREATE USER */
     const user = await User.create({
       name,
       email,
-      password: hashedPassword
+      password: hashedPassword,
+      role: "patient"
     });
 
-    /* TOKEN */
-    const token = generateToken(user._id);
+    const token = generateToken(
+      user._id,
+      user.role
+    );
 
     res.status(201).json({
-      token
+      token,
+      role: user.role
     });
 
   } catch (error) {
+
     console.log(error);
 
     res.status(500).json({
@@ -69,19 +71,20 @@ export const register = async (req, res) => {
 };
 
 
-
 /* =========================
    LOGIN
 ========================= */
 
 export const login = async (req, res) => {
+
   try {
+
     const {
       email,
-      password
+      password,
+      role
     } = req.body;
 
-    /* FIND USER */
     const user = await User.findOne({
       email
     });
@@ -92,7 +95,14 @@ export const login = async (req, res) => {
       });
     }
 
-    /* MATCH PASSWORD */
+    /* ROLE CHECK */
+
+    if (user.role !== role) {
+      return res.status(403).json({
+        msg: `This account is not registered as ${role}`
+      });
+    }
+
     const isMatch =
       await bcrypt.compare(
         password,
@@ -105,14 +115,18 @@ export const login = async (req, res) => {
       });
     }
 
-    /* TOKEN */
-    const token = generateToken(user._id);
+    const token = generateToken(
+      user._id,
+      user.role
+    );
 
     res.json({
-      token
+      token,
+      role: user.role
     });
 
   } catch (error) {
+
     console.log(error);
 
     res.status(500).json({
@@ -122,13 +136,14 @@ export const login = async (req, res) => {
 };
 
 
-
 /* =========================
    GET PROFILE
 ========================= */
 
 export const getMe = async (req, res) => {
+
   try {
+
     const user = await User.findById(
       req.user.id
     ).select("-password");
@@ -142,6 +157,7 @@ export const getMe = async (req, res) => {
     res.json(user);
 
   } catch (error) {
+
     console.log(error);
 
     res.status(500).json({

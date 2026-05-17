@@ -5,7 +5,9 @@ const Register = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    password: ""
+    password: "",
+    age: "",
+    Gender: ""
   });
 
   const [loading, setLoading] = useState(false);
@@ -107,6 +109,38 @@ const Register = () => {
           }}
         />
 
+                <input
+          type="number"
+          placeholder="Age"
+          className="form-control mb-3"
+          value={form.age}
+          onChange={(e) =>
+            setForm({
+              ...form,
+              age: e.target.value
+            })
+          }
+          style={{
+            height: "50px",
+            borderRadius: "12px"
+          }}
+        />
+        <select
+          className="form-control mb-3"
+          value={form.Gender}
+          onChange={(e) =>
+            setForm({
+              ...form,
+              Gender: e.target.value
+            })
+          }
+        >
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
         <input
           type="email"
           placeholder="Email"
@@ -140,6 +174,7 @@ const Register = () => {
             borderRadius: "12px"
           }}
         />
+
 
         <button
           type="submit"

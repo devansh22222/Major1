@@ -63,7 +63,13 @@ const ChatArea = ({
             ? "user"
             : "bot",
 
-        text: msg.content
+        text: msg.content,
+
+        reviewStatus:
+          msg.reviewStatus || null,
+
+        doctorNotes:
+          msg.doctorNotes || ""
       }));
 
 
@@ -103,12 +109,14 @@ const ChatArea = ({
           chatId
         });
 
-
       setMessages((prev) => [
         ...prev,
         {
           type: "bot",
-          text: res.reply
+
+          prediction: res.prediction,
+
+          reviewStatus: "pending"
         }
       ]);
 
@@ -226,7 +234,344 @@ const ChatArea = ({
                       "0 2px 10px rgba(0,0,0,0.05)"
                   }}
                 >
-                  {msg.text}
+                  {
+  msg.type === "bot" &&
+  msg.prediction ? (
+
+    <div>
+
+      {
+        msg.prediction.map(
+          (item, idx) => (
+
+            <div
+              key={idx}
+              style={{
+                marginBottom: "25px"
+              }}
+            >
+
+              {/* DISEASE */}
+
+              <div
+  style={{
+    background:
+      "linear-gradient(135deg,#e8f7f4,#f4fbf9)",
+
+    border:
+      "1px solid #d1fae5",
+
+    borderRadius: "18px",
+
+    padding: "18px",
+
+    marginBottom: "18px",
+
+    boxShadow:
+      "0 4px 15px rgba(0,0,0,0.04)"
+  }}
+>
+
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "12px"
+    }}
+  >
+
+    <div
+      style={{
+        width: "52px",
+        height: "52px",
+        borderRadius: "14px",
+        background: "#2a9d8f",
+        color: "#fff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: "24px"
+      }}
+    >
+      🩺
+    </div>
+
+
+    <div>
+
+      <div
+        style={{
+          fontSize: "13px",
+          color: "#6b7280",
+          fontWeight: "500"
+        }}
+      >
+        Predicted Condition
+      </div>
+
+      <div
+        style={{
+          fontWeight: "700",
+          fontSize: "22px",
+          color: "#111827",
+          marginTop: "3px",
+          textTransform: "capitalize"
+        }}
+      >
+        {item.disease}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+              {/* MEDICINES */}
+
+              <div
+                style={{
+                  marginTop: "10px"
+                }}
+              >
+
+                <div
+                  style={{
+                    fontWeight: "600",
+                    marginBottom: "12px"
+                  }}
+                >
+                  Recommended Medicines
+                </div>
+
+
+                <div
+                  className="row g-3"
+                >
+
+                  {
+                    item.medicines?.map(
+                      (med, medIndex) => (
+
+                        <div
+                          key={medIndex}
+                          className="col-md-6"
+                        >
+
+                          <div
+                            style={{
+                              border:
+                                "1px solid #e5e7eb",
+
+                              borderRadius:
+                                "18px",
+
+                              padding: "18px",
+
+                              background:
+                                "#fff",
+
+                              boxShadow:
+                                "0 3px 12px rgba(0,0,0,0.04)",
+
+                              transition:
+                                "0.2s"
+                            }}
+                          >
+
+                            <div
+                              className="d-flex justify-content-between"
+                            >
+
+                              <div>
+
+                                <div
+                                  style={{
+                                    fontWeight: "700",
+                                    fontSize: "17px",
+                                    color: "#111827"
+                                  }}
+                                >
+                                  {med.name}
+                                </div>
+
+                                <div
+                                  style={{
+                                    fontSize:
+                                      "13px",
+
+                                    color:
+                                      "#6b7280"
+                                  }}
+                                >
+                                  {med.group}
+                                </div>
+
+                              </div>
+
+
+                              <div
+                                style={{
+                                  background:
+                                    "#ecfdf5",
+
+                                  color:
+                                    "#059669",
+
+                                  padding:
+                                    "6px 12px",
+
+                                  borderRadius:
+                                    "999px",
+
+                                  fontWeight:
+                                    "700",
+
+                                  fontSize:
+                                    "14px"
+                                }}
+                              >
+                                ₹{med.price}
+                              </div>
+
+                            </div>
+
+
+
+                            <div
+                              style={{
+                                marginTop:
+                                  "12px",
+
+                                fontSize:
+                                  "13px",
+
+                                color:
+                                  "#374151",
+
+                                whiteSpace:
+                                  "pre-wrap"
+                              }}
+                            >
+                              {
+                                med.details
+                              }
+                            </div>
+
+                          </div>
+
+                        </div>
+                      )
+                    )
+                  }
+
+                </div>
+
+              </div>
+
+            </div>
+          )
+        )
+      }
+
+    </div>
+
+  ) : (
+
+    msg.text
+  )
+}
+
+                  {
+                    msg.reviewStatus === "pending" && (
+
+                      <div
+                        style={{
+                          marginTop: "12px",
+                          fontSize: "13px",
+                          color: "#f59e0b",
+                          fontWeight: "600"
+                        }}
+                      >
+                        ⏳ Waiting for doctor verification
+                      </div>
+                    )
+                  }
+
+                  {
+                    msg.reviewStatus === "approved" && (
+
+                      <div
+                        style={{
+                          marginTop: "12px",
+                          fontSize: "13px",
+                          color: "#10b981",
+                          fontWeight: "600"
+                        }}
+                      >
+                        ✅ Verified by Doctor
+                      </div>
+                    )
+                  }
+
+                  {
+                    msg.reviewStatus === "edited" && (
+
+                      <div
+                        style={{
+                          marginTop: "12px",
+                          fontSize: "13px",
+                          color: "#3b82f6",
+                          fontWeight: "600"
+                        }}
+                      >
+                        ✏️ Edited by Doctor
+                      </div>
+                    )
+                  }
+
+                  {
+                    msg.reviewStatus === "rejected" && (
+
+                      <div
+                        style={{
+                          marginTop: "12px",
+                          fontSize: "13px",
+                          color: "#ef4444",
+                          fontWeight: "600"
+                        }}
+                      >
+                        ❌ Rejected by Doctor
+
+                        {
+                          msg.doctorNotes && (
+
+                            <div
+                              style={{
+                                marginTop: "10px",
+                                padding: "10px",
+                                background: "#f9fafb",
+                                borderRadius: "10px",
+                                fontSize: "13px",
+                                color: "#374151",
+                                border: "1px solid #e5e7eb"
+                              }}
+                            >
+                              <strong>
+                                Doctor Notes:
+                              </strong>
+
+                              <br />
+
+                              {msg.doctorNotes}
+                            </div>
+                          )
+                        }
+                      </div>
+                    )
+                  }
                 </div>
 
               </div>
